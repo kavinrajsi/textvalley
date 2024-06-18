@@ -225,7 +225,7 @@ p {
   }
 }
 
-ul:not(.header__menu--items) {
+ul:not(.header__menu--items, .heaader__menu--items) {
   margin-left: 40px;
   li {
     list-style-type: disc;
