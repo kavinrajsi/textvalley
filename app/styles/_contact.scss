@@ -1,0 +1,108 @@
+.contact__detail {
+  background-color: #fdf7eb;
+}
+
+.contact__detail--title {
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.contact__detail--address {
+  margin-bottom: 16px;
+
+  .contact__detail--address--title {
+    /* GM/H4 */
+    font-family: "Cera Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  address {
+    strong {
+      font-weight: 400;
+    }
+    /* GM/B1 */
+    font-family: "Cera Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    color: #000000;
+  }
+}
+
+.contact__detail--investor,
+.contact__detail--trade {
+  margin-bottom: 16px;
+  span,
+  a {
+    display: inline-block;
+  }
+  /* GM/H4 */
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  color: #000000;
+}
+
+.contact__detail--form {
+  margin-top: 32px;
+  padding: 24px 16px;
+  background-color: #ffffff;
+  .contact__detail--form__title {
+    text-align: center;
+
+    font-family: CeraPro-Bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 24px;
+  }
+}
+
+form {
+  .form__input--wrapper:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .form__input--label {
+    display: block;
+    width: 100%;
+  }
+  .form__input--field {
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #747474;
+  }
+  textarea{
+    height: 112px;
+  }
+  .form__input--button {
+    font-family: "Cera Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    padding: 8px 24px;
+    background-color: #C19453;
+  }
+}

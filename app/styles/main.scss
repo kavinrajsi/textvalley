@@ -1,0 +1,53 @@
+@import "reset";
+
+@font-face {
+  font-family: CeraPro-Black;
+  src: url("../fonts/Cera-Pro-Black.woff") format("woff"),
+    url("../fonts/Cera-Pro-Black.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: CeraPro-Bold;
+  src: url("../fonts/Cera-Pro-Bold.woff") format("woff"),
+    url("../fonts/Cera-Pro-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: CeraPro-Medium;
+  src: url("../fonts/Cera-Pro-Medium.woff") format("woff"),
+    url("../fonts/Cera-Pro-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: CeraPro-Regular;
+  src: url("../fonts/Cera-Pro-Regular.woff") format("woff"),
+    url("../fonts/Cera-Pro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "font";
+@import "common";
+@import "header";
+@import "page-home";
+@import "media";
+@import "facilities";
+@import "map";
+@import "gallery";
+@import "gallery-detail";
+@import "event";
+@import "shop";
+@import "shop-detail";
+@import "contact";
+@import "blog-detail";
+@import "footer";

@@ -1,0 +1,44 @@
+.media__grid--card {
+  background-color: #fff;
+  .media__grid--card__image--wrapper {
+  }
+  .meida__grid--card__content {
+    padding: 16px;
+  }
+  .meida__grid--card__content--timestamp {
+    font-family: "Cera Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #231f20;
+    display: inline-block;
+  }
+  .meida__grid--card__content--title {
+    margin-top: 4px;
+
+    font-family: CeraPro-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #231f20;
+  }
+}
+
+.pagination__list {
+  text-align: center;
+  a {
+    min-height: 24px;
+    padding: 2px 9px;
+    text-align: center;
+    display: inline-block;
+    font-family: CeraPro-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #231f20;
+    border: 1px solid #fff;
+    &.active {
+      border-color: #c19453;
+      background-color: #c19453;
+    }
+  }
+}

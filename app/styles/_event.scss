@@ -1,0 +1,152 @@
+.current--event__list {
+  .event__lists {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .event__list {
+    padding: 8px;
+    background-color: #fff;
+    .event__list--content {
+      padding: 16px;
+      .event__list--content__timestramp {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #231f20;
+      }
+      .event__list--content__title {
+        margin-top: 4px;
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #231f20;
+      }
+    }
+  }
+}
+
+.upcoming--event__list {
+  border-top: 1px solid #999999;
+  .event__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .event__list--timestramp {
+      grid-column: span 2;
+      span {
+        padding-left: 16px;
+        padding-right: 16px;
+        display: inline-block;
+        text-align: center;
+        /* GM/H5 */
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 122% */
+
+        /* GM/Dark Black */
+        color: #231f20;
+
+        &:first-child {
+          border-right: 1px solid #000;
+        }
+      }
+    }
+    .event__list--image {
+      grid-column: span 4;
+    }
+    .event__list--content {
+      grid-column: span 6;
+
+      .event__list--content__title {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #231f20;
+      }
+      .event__list--content__intro {
+        margin-top: 8px;
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #231f20;
+      }
+    }
+  }
+}
+
+
+
+.past--event__list {
+  border-top: 1px solid #999999;
+  .event__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .event__list--timestramp {
+      grid-column: span 2;
+      span {
+        padding-left: 16px;
+        padding-right: 16px;
+        display: inline-block;
+        text-align: center;
+        /* GM/H5 */
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 122% */
+
+        /* GM/Dark Black */
+        color: #231f20;
+
+        &:first-child {
+          border-right: 1px solid #000;
+        }
+      }
+    }
+    .event__list--image {
+      grid-column: span 4;
+    }
+    .event__list--content {
+      grid-column: span 6;
+
+      .event__list--content__title {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        color: #231f20;
+      }
+      .event__list--content__intro {
+        margin-top: 8px;
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #231f20;
+      }
+    }
+  }
+}

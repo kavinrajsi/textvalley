@@ -1,0 +1,37 @@
+.footer__home{
+  padding: 12px 0;
+  background-color: #866c38;
+
+  .footer__copyright p {
+    font-family: "Cera Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    color: #fbe2a2;
+  }
+
+  .footer__socialmenu {
+    a:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+  .footer__made-by {
+    margin-left: 32px;
+    display: inline-block;
+    font-family: "Cera Pro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 13px;
+    text-decoration-line: underline;
+    color: #fbe2a2;
+  }
+}
+
+.footer__main {
+  background-color: #000000;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  transform: none !important;
+  overflow-x: hidden;
+  background-color: #fdf7eb;
+}
+
+.container-box {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+.display\:flex {
+  display: flex;
+}
+.display\:grid {
+  display: grid;
+  gap: 30px;
+}
+.justify-content\:center {
+  justify-content: center;
+}
+.justify-content\:between {
+  justify-content: space-between;
+}
+
+.align\:center {
+  align-items: center;
+}
+
+.card_by_2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.card_by_3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card_by_8\:4 {
+  grid-template-columns: 1fr 380px;
+}
+
+.card_by_4\:8 {
+  grid-template-columns: repeat(12, 1fr);
+  > div {
+    &:first-child {
+      grid-column: span 4;
+    }
+    &:last-child {
+      grid-column: span 8;
+    }
+  }
+}
+
+.gallery__images {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.media__grid--lists {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.offer__brand--lists {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.margin\:top\:20{
+  margin-top: 20px;
+}
+.margin\:top\:56 {
+  margin-top: 56px;
+}
+.margin\:bottom\:56 {
+  margin-bottom: 56px;
+}
+.margin\:bottom\:48 {
+  margin-bottom: 48px;
+}
+.margin\:bottom\:24 {
+  margin-bottom: 24px;
+}
+.margin\:bottom\:40 {
+  margin-bottom: 40px;
+}
+.margin\:bottom\:30 {
+  margin-bottom: 30px;
+}
+.width\:790 {
+  max-width: 790px;
+}
+
+textarea {
+  resize: none;
+}
+
+.section__title {
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #231f20;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  grid-area: footer;
+}
+
+.button {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 8px 24px;
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+
+  &.button__solid {
+    background-color: #c19453;
+  }
+}

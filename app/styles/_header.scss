@@ -1,0 +1,121 @@
+.header__home {
+  max-height: 66px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fbe2a2;
+  .heaader__menu {
+    .heaader__menu--items {
+      display: flex;
+      .header__menu-item {
+        a {
+          font-family: CeraPro-Medium;
+          font-size: 14px;
+          line-height: 18px;
+          text-align: center;
+          color: #000000;
+          padding-left: 12px;
+          padding-right: 12px;
+          padding: 8px 12px;
+        }
+        &:last-child {
+          a {
+            color: #fff;
+            background-color: #231f20;
+          }
+        }
+      }
+    }
+  }
+}
+.header__main {
+  overflow: hidden;
+  background-color: #fff;
+  .header__logo--wrapper {
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    &:before {
+      content: "";
+      display: block;
+      background-color: #231f20;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -9999em;
+      right: -9999em;
+      z-index: -1;
+    }
+
+    .header__menu--items {
+      display: flex;
+      .header__menu-item {
+        a {
+          display: inline-block;
+          padding: 18px 12px;
+          font-family: CeraPro-Medium;
+          font-style: normal;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .header__logos {
+      display: flex;
+      align-items: center;
+      a {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      a:not(:last-child) {
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+}
+
+.header__happening--timing {
+  display: flex;
+  text-align: right;
+  span {
+    display: block;
+    text-align: right;
+  }
+  .header__happening--select,
+  .header__timing--select {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .header__happening--timing__title,
+  .header__happening--timing__select {
+    font-family: CeraPro-Light;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .header__happening--timing__select {
+    font-family: CeraPro-Bold;
+  }
+  .header__happening--timing__icon {
+    padding-left: 8px;
+  }
+  .header__happening--select {
+    padding-left: 16px;
+  }
+  .header__timing--select {
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid #000;
+  }
+}
