@@ -1,0 +1,102 @@
+.global__market--overview {
+  .global__market--overview__content {
+    .overview__content--title {
+      /* GM/H2 */
+      font-family: "Cera Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+
+      /* GM/Dark Black */
+      color: #231f20;
+      margin-bottom: 16px;
+    }
+    p {
+      /* GM/B1 */
+      font-family: "Cera Pro";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      /* or 125% */
+
+      /* GM/Dark Black */
+      color: #231f20;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.global__market--discover {
+  background-color: #231f20;
+  .section__title {
+    color: #fff;
+  }
+}
+.discover__more--lists {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.discover__more--image {
+  position: relative;
+  .discover__more--content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: 0;
+    margin: 16px;
+    padding: 16px;
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    .discover__more--content__title {
+      // font-family: "Cera Pro";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #231f20;
+      margin-bottom: 8px;
+    }
+    p {
+      /* GM/B2 */
+      font-family: "Cera Pro";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: #231f20;
+      margin-bottom: 24px;
+    }
+    .button {
+      display: block;
+    }
+  }
+}
+
+.global__market--events {
+  background-color: #c19453;
+  .global__market--events__lists {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.padding\:20 {
+  padding: 20px;
+}
+
+.tag__expo-card {
+  img {
+    width: 100%;
+  }
+}
+
+
+.global__market--blogs{
+  background-color: #231F20;
+  .section__title{
+    color: #fff;
+  }
+}
