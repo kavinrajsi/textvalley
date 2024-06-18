@@ -36,6 +36,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: CeraPro-Light;
+  src: url("../fonts/Cera-Pro-Regular.woff") format("woff"),
+    url("../fonts/Cera-Pro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "font";
 @import "common";
 @import "header";
