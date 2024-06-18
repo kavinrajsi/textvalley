@@ -3,9 +3,7 @@
 }
 
 .contact__detail--title {
-  font-family: "Cera Pro";
-  font-style: normal;
-  font-weight: 700;
+  font-family: CeraPro-Bold;
   font-size: 32px;
   line-height: 40px;
   color: #000000;
@@ -17,9 +15,7 @@
 
   .contact__detail--address--title {
     /* GM/H4 */
-    font-family: "Cera Pro";
-    font-style: normal;
-    font-weight: 500;
+    font-family: CeraPro-Medium;
     font-size: 20px;
     line-height: 24px;
     /* identical to box height, or 120% */
@@ -29,12 +25,10 @@
   }
   address {
     strong {
-      font-weight: 400;
+      font-family: CeraPro-Medium;
     }
     /* GM/B1 */
-    font-family: "Cera Pro";
-    font-style: normal;
-    font-weight: 300;
+    font-family: CeraPro-Light;
     font-size: 16px;
     line-height: 20px;
     /* or 125% */
@@ -51,9 +45,7 @@
     display: inline-block;
   }
   /* GM/H4 */
-  font-family: "Cera Pro";
-  font-style: normal;
-  font-weight: 500;
+  font-family: CeraPro-Medium;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height, or 120% */
@@ -90,19 +82,17 @@ form {
     width: 100%;
     border-bottom: 1px solid #747474;
   }
-  textarea{
+  textarea {
     height: 112px;
   }
   .form__input--button {
-    font-family: "Cera Pro";
-    font-style: normal;
-    font-weight: 500;
+    font-family: CeraPro-Medium;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     letter-spacing: 0.15em;
     color: #ffffff;
     padding: 8px 24px;
-    background-color: #C19453;
+    background-color: #c19453;
   }
 }

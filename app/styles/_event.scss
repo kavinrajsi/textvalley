@@ -11,18 +11,14 @@
     .event__list--content {
       padding: 16px;
       .event__list--content__timestramp {
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 300;
+        font-family: CeraPro-Light;
         font-size: 14px;
         line-height: 18px;
         color: #231f20;
       }
       .event__list--content__title {
         margin-top: 4px;
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 700;
+font-family: CeraPro-Bold;
         font-size: 18px;
         line-height: 22px;
         color: #231f20;
@@ -48,9 +44,7 @@
         display: inline-block;
         text-align: center;
         /* GM/H5 */
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 700;
+font-family: CeraPro-Bold;
         font-size: 18px;
         line-height: 22px;
         /* identical to box height, or 122% */
@@ -70,18 +64,14 @@
       grid-column: span 6;
 
       .event__list--content__title {
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 700;
+font-family: CeraPro-Bold;
         font-size: 32px;
         line-height: 40px;
         color: #231f20;
       }
       .event__list--content__intro {
         margin-top: 8px;
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 300;
+        font-family: CeraPro-Light;
         font-size: 16px;
         line-height: 20px;
         color: #231f20;
@@ -89,8 +79,6 @@
     }
   }
 }
-
-
 
 .past--event__list {
   border-top: 1px solid #999999;
@@ -109,9 +97,7 @@
         display: inline-block;
         text-align: center;
         /* GM/H5 */
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 700;
+font-family: CeraPro-Bold;
         font-size: 18px;
         line-height: 22px;
         /* identical to box height, or 122% */
@@ -131,18 +117,14 @@
       grid-column: span 6;
 
       .event__list--content__title {
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 700;
+font-family: CeraPro-Bold;
         font-size: 32px;
         line-height: 40px;
         color: #231f20;
       }
       .event__list--content__intro {
         margin-top: 8px;
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 300;
+        font-family: CeraPro-Light;
         font-size: 16px;
         line-height: 20px;
         color: #231f20;

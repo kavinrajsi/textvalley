@@ -7,6 +7,7 @@
     .heaader__menu--items {
       display: flex;
       .header__menu-item {
+
         a {
           font-family: CeraPro-Medium;
           font-size: 14px;
@@ -67,6 +68,12 @@
           text-transform: uppercase;
           color: #ffffff;
         }
+
+        &.active{
+          a{
+          color: #C19453;
+          }
+        }
       }
     }
 
@@ -119,3 +126,4 @@
     border-left: 1px solid #000;
   }
 }
+

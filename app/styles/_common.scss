@@ -80,7 +80,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.margin\:top\:20{
+.margin\:top\:20 {
   margin-top: 20px;
 }
 .margin\:top\:56 {
@@ -101,10 +101,10 @@ body {
 .margin\:bottom\:30 {
   margin-bottom: 30px;
 }
-.padding\:top\:56{
+.padding\:top\:56 {
   padding-top: 56px;
 }
-.padding\:bottom\:56{
+.padding\:bottom\:56 {
   padding-bottom: 56px;
 }
 .width\:790 {
@@ -116,9 +116,7 @@ textarea {
 }
 
 .section__title {
-  font-family: "Cera Pro";
-  font-style: normal;
-  font-weight: 700;
+  font-family: CeraPro-Bold;
   font-size: 32px;
   line-height: 40px;
   color: #231f20;
@@ -153,9 +151,7 @@ footer {
   margin: 0 auto;
   display: inline-block;
   padding: 8px 24px;
-  font-family: "Cera Pro";
-  font-style: normal;
-  font-weight: 500;
+  font-family: CeraPro-Medium;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -164,5 +160,55 @@ footer {
 
   &.button__solid {
     background-color: #c19453;
+  }
+}
+
+.padding\:top\:40 {
+  padding-top: 40px;
+}
+.padding\:bottom\:40 {
+  padding-bottom: 40px;
+}
+
+.global__market--blogs--list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+
+  .blog__card--mini {
+    background-color: #fff;
+    .blog__card--mini--content {
+      padding: 24px 16px;
+      .blog__card--mini--content--title {
+        font-family: CeraPro-Medium;
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+        margin-bottom: 8px;
+      }
+      p {
+        margin-bottom: 24px;
+        font-family: CeraPro-Light;
+        font-size: 14px;
+        line-height: 18px;
+
+        color: #000000;
+      }
+      .blog__card--mini--content--readMore {
+        font-family: CeraPro-Medium;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.05em;
+
+        /* GM/Primary Color */
+        color: #c19453;
+      }
+      .icon {
+        display: inline-block;
+        margin-left: 8px;
+      }
+    }
   }
 }

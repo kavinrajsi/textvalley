@@ -1,25 +1,25 @@
-.page__facilities{
+.page__facilities {
   overflow: hidden;
 }
 .facilities__list {
-  display:grid;
+  display: grid;
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 40px;
   padding-bottom: 40px;
-  &:nth-child(1){
+  &:nth-child(1) {
   }
-  &:nth-child(even){
-    background-color: #E2E2E2;
+  &:nth-child(even) {
+    background-color: #e2e2e2;
     position: relative;
     z-index: 1;
-    .facilities__content{
+    .facilities__content {
       order: -1;
     }
-    &:before{
+    &:before {
       content: "";
       display: block;
-      background-color: #E2E2E2;
+      background-color: #e2e2e2;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -32,9 +32,7 @@
     padding: 24px 32px;
     .facilities__content--title {
       /* GM/H2 */
-      font-family: "Cera Pro";
-      font-style: normal;
-      font-weight: 700;
+      font-family: CeraPro-Bold;
       font-size: 32px;
       line-height: 40px;
       /* identical to box height, or 125% */
@@ -45,9 +43,7 @@
     .facilities__content--intro {
       p {
         /* GM/B1 */
-        font-family: "Cera Pro";
-        font-style: normal;
-        font-weight: 300;
+font-family: CeraPro-Light;
         font-size: 16px;
         line-height: 20px;
         /* or 125% */
@@ -63,12 +59,12 @@
   }
 }
 
-.guest__amenities{
-  background-color: #231F20;
-  .section__title{
+.guest__amenities {
+  background-color: #231f20;
+  .section__title {
     color: #fff;
   }
-  .guest__amenities--lists{
+  .guest__amenities--lists {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(5, 1fr);
