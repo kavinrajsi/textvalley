@@ -23,10 +23,12 @@
     color: #000000;
     margin-bottom: 8px;
   }
+
   address {
     strong {
       font-family: CeraPro-Medium;
     }
+
     /* GM/B1 */
     font-family: CeraPro-Light;
     font-size: 16px;
@@ -40,10 +42,12 @@
 .contact__detail--investor,
 .contact__detail--trade {
   margin-bottom: 16px;
+
   span,
   a {
     display: inline-block;
   }
+
   /* GM/H4 */
   font-family: CeraPro-Medium;
   font-size: 20px;
@@ -57,6 +61,7 @@
   margin-top: 32px;
   padding: 24px 16px;
   background-color: #ffffff;
+
   .contact__detail--form__title {
     text-align: center;
 
@@ -68,31 +73,9 @@
   }
 }
 
-form {
-  .form__input--wrapper:not(:last-child) {
-    margin-bottom: 24px;
-  }
-  .form__input--label {
-    display: block;
-    width: 100%;
-  }
-  .form__input--field {
-    padding: 8px 0;
-    display: block;
-    width: 100%;
-    border-bottom: 1px solid #747474;
-  }
-  textarea {
-    height: 112px;
-  }
-  .form__input--button {
-    font-family: CeraPro-Medium;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.15em;
-    color: #ffffff;
-    padding: 8px 24px;
-    background-color: #c19453;
+.page__leasing {
+  position: relative;
+  .container-fluid {
+    position: relative;
   }
 }

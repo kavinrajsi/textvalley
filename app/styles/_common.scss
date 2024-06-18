@@ -224,3 +224,47 @@ p {
     margin-top: 16px;
   }
 }
+
+ul {
+  margin-left: 40px;
+  li {
+    list-style-type: disc;
+    font-family: CeraPro-Light;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+
+form {
+  .form__input--wrapper:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .form__input--label {
+    display: block;
+    width: 100%;
+  }
+
+  .form__input--field {
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #747474;
+  }
+
+  textarea {
+    height: 112px;
+  }
+
+  .form__input--button {
+    font-family: CeraPro-Medium;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    padding: 8px 24px;
+    background-color: #c19453;
+  }
+}

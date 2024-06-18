@@ -1,58 +1,31 @@
-.leasing__list {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  &:nth-child(1) {
-  }
-  &:nth-child(even) {
-    background-color: #e2e2e2;
-    position: relative;
-    z-index: 1;
-    .leasing__content {
-      order: -1;
-    }
-    &:before {
-      content: "";
-      display: block;
-      background-color: #e2e2e2;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -9999em;
-      right: -9999em;
-      z-index: -1;
-    }
-  }
-  .leasing__content {
-    padding: 24px 32px;
-    .leasing__content--title {
-      /* GM/H2 */
-      font-family: CeraPro-Bold;
-      font-size: 32px;
-      line-height: 40px;
-      /* identical to box height, or 125% */
 
-      /* GM/Dark Black */
-      color: #231f20;
-    }
-    .leasing__content--intro {
-      p {
-        /* GM/B1 */
-        font-family: CeraPro-Light;
-        font-size: 16px;
-        line-height: 20px;
-        /* or 125% */
-
-        /* GM/Dark Black */
-        color: #231f20;
-
-        + p {
-          margin-top: 16px;
-        }
-      }
-    }
+.page__cover--form--wrapper {
+  position: absolute;
+  padding: 0 20px;
+  width: calc(100% - 40px);
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.page__cover--form {
+  max-width: 380px;
+  height: 554px;
+  padding: 16px 24px;
+  background-color: #fff;
+  .page__cover--form__title {
+    /* GM/Desktop/H3 */
+    font-family: "Cera Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+    color: #000000;
+    margin-bottom: 24px;
   }
 }
-
