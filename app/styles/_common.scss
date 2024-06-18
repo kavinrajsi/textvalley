@@ -225,7 +225,7 @@ p {
   }
 }
 
-ul {
+ul:not(.header__menu--items) {
   margin-left: 40px;
   li {
     list-style-type: disc;
@@ -233,6 +233,13 @@ ul {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+  }
+}
+
+.shop__information-timing--title + ul {
+  margin-left: 0;
+  li {
+    list-style: none;
   }
 }
 

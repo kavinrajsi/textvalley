@@ -37,21 +37,13 @@
     padding-bottom: 16px;
   }
   .header__menu {
+    background-color: #231f20;
+    .container-box{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    &:before {
-      content: "";
-      display: block;
-      background-color: #231f20;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -9999em;
-      right: -9999em;
-      z-index: -1;
     }
 
     .header__menu--items {
