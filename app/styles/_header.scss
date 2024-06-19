@@ -366,7 +366,9 @@
 
 .menu__open {
   .header__global--mall .header__menu .header__menu--items .header__menu-item a {
-    color: #000;
+    @media (max-width: 939.98px) {
+    color: #fff;
+    }
   }
 }
 
