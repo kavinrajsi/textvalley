@@ -115,6 +115,9 @@
     }
   }
 
+  .accordion-header.active .icon svg{
+    transform: rotate(180deg);
+  }
   .accordion-header.active + .accordion-content {
     display: flex;
   }
