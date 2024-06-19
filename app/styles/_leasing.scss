@@ -24,9 +24,7 @@
   background-color: #fff;
   .page__cover--form__title {
     /* GM/Desktop/H3 */
-    font-family: "Cera Pro";
-    font-style: normal;
-    font-weight: 700;
+    font-family: var(--font-700);
     font-size: 24px;
     line-height: 30px;
     /* or 125% */
@@ -43,6 +41,11 @@
   .accordion-header {
     cursor: pointer;
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: 968px) {
+      flex-direction: row;
+    }
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #999999;
@@ -115,10 +118,15 @@
     }
   }
 
-  .accordion-header.active .icon svg{
+  .accordion-header.active .icon svg {
     transform: rotate(180deg);
   }
   .accordion-header.active + .accordion-content {
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: 968px) {
+      flex-direction: row;
+    }
   }
 }
