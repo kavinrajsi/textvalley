@@ -32,7 +32,7 @@
     padding: 24px 32px;
     .facilities__content--title {
       /* GM/H2 */
-      font-family: CeraPro-Bold;
+      font-family: var(--font-700);
       font-size: 32px;
       line-height: 40px;
       /* identical to box height, or 125% */
@@ -43,7 +43,7 @@
     .facilities__content--intro {
       p {
         /* GM/B1 */
-font-family: CeraPro-Light;
+font-family: var(--font-300);
         font-size: 16px;
         line-height: 20px;
         /* or 125% */

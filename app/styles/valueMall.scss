@@ -1,0 +1,85 @@
+/*!
+Theme Name: texvalley
+Theme URI: http://madarth.me/work
+Author: Madarth
+Author URI: https://madarth.com
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: texvalley
+Tags: custom-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+texvalley is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import "reset";
+
+@font-face {
+  font-family: CeraPro-Black;
+  src: url("../fonts/Cera-Pro-Black.woff") format("woff"),
+    url("../fonts/Cera-Pro-Black.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: CeraPro-Bold;
+  src: url("../fonts/Cera-Pro-Bold.woff") format("woff"),
+    url("../fonts/Cera-Pro-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: CeraPro-Medium;
+  src: url("../fonts/Cera-Pro-Medium.woff") format("woff"),
+    url("../fonts/Cera-Pro-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: CeraPro-Regular;
+  src: url("../fonts/Cera-Pro-Regular.woff") format("woff"),
+    url("../fonts/Cera-Pro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: cera_prolight;
+  src: url("../fonts/cera_pro_light-webfont.woff") format("woff"),
+    url("../fonts/cera_pro_light-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --font-300: cera_prolight;
+  --font-400: CeraPro-Regular;
+  --font-500: CeraPro-Medium;
+  --font-700: CeraPro-Bold;
+  --font-900: CeraPro-Black;
+  }
+
+@import "font";
+@import "common";
+@import "header";
+@import "valueMall-home";
+@import "footer";

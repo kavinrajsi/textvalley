@@ -402,12 +402,12 @@ select[multiple] {
 }
 
 body {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  // -webkit-touch-callout: none;
+  // -webkit-user-select: none;
+  // -khtml-user-select: none;
+  // -moz-user-select: none;
+  // -ms-user-select: none;
+  // user-select: none;
 }
 
 hr {
@@ -417,7 +417,6 @@ hr {
 }
 
 main {
-  // margin-top: 76px;
   overflow: hidden;
   position: relative;
 }

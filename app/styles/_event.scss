@@ -11,14 +11,14 @@
     .event__list--content {
       padding: 16px;
       .event__list--content__timestramp {
-        font-family: CeraPro-Light;
+        font-family: var(--font-300);
         font-size: 14px;
         line-height: 18px;
         color: #231f20;
       }
       .event__list--content__title {
         margin-top: 4px;
-font-family: CeraPro-Bold;
+font-family: var(--font-700);
         font-size: 18px;
         line-height: 22px;
         color: #231f20;
@@ -44,7 +44,7 @@ font-family: CeraPro-Bold;
         display: inline-block;
         text-align: center;
         /* GM/H5 */
-font-family: CeraPro-Bold;
+font-family: var(--font-700);
         font-size: 18px;
         line-height: 22px;
         /* identical to box height, or 122% */
@@ -64,14 +64,14 @@ font-family: CeraPro-Bold;
       grid-column: span 6;
 
       .event__list--content__title {
-font-family: CeraPro-Bold;
+font-family: var(--font-700);
         font-size: 32px;
         line-height: 40px;
         color: #231f20;
       }
       .event__list--content__intro {
         margin-top: 8px;
-        font-family: CeraPro-Light;
+        font-family: var(--font-300);
         font-size: 16px;
         line-height: 20px;
         color: #231f20;
@@ -97,7 +97,7 @@ font-family: CeraPro-Bold;
         display: inline-block;
         text-align: center;
         /* GM/H5 */
-font-family: CeraPro-Bold;
+font-family: var(--font-700);
         font-size: 18px;
         line-height: 22px;
         /* identical to box height, or 122% */
@@ -117,14 +117,14 @@ font-family: CeraPro-Bold;
       grid-column: span 6;
 
       .event__list--content__title {
-font-family: CeraPro-Bold;
+font-family: var(--font-700);
         font-size: 32px;
         line-height: 40px;
         color: #231f20;
       }
       .event__list--content__intro {
         margin-top: 8px;
-        font-family: CeraPro-Light;
+        font-family: var(--font-300);
         font-size: 16px;
         line-height: 20px;
         color: #231f20;

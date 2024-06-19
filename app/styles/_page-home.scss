@@ -38,7 +38,7 @@
     text-align: center;
     padding: 8px 16px;
     background: #ffffff;
-font-family: CeraPro-Light;
+font-family: var(--font-300);
     font-size: 12px;
     line-height: 15px;
     text-align: center;
@@ -49,3 +49,22 @@ font-family: CeraPro-Light;
 
 }
 
+
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 12px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: #E8E8E8;
+  border: 1px solid #E8E8E8;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #211503;
+  border: 1px solid #211503;
+}

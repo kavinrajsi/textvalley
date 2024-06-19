@@ -4,7 +4,6 @@ body {
   overflow-x: hidden;
   background-color: #fdf7eb;
 }
-
 .container__box {
   max-width: 1200px;
   margin-left: auto;
@@ -33,23 +32,34 @@ body {
 .justify-content\:between {
   justify-content: space-between;
 }
-
+.align\:flex {
+  align-items: flex-start;
+}
 .align\:center {
   align-items: center;
 }
-
+.align\:end {
+  align-items: flex-end;
+}
 .card_by_2 {
   grid-template-columns: 1fr 1fr;
 }
-
 .card_by_3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 .card_by_8\:4 {
-  grid-template-columns: 1fr 380px;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 1fr);
+    > div {
+      &:first-child {
+        grid-column: span 8;
+      }
+      &:last-child {
+        grid-column: span 4;
+      }
+    }
+  }
 }
-
 .card_by_4\:8 {
   grid-template-columns: repeat(12, 1fr);
   > div {
@@ -61,25 +71,21 @@ body {
     }
   }
 }
-
 .gallery__images {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
 }
-
 .media__grid--lists {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
 }
-
 .offer__brand--lists {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
 }
-
 .margin\:top\:20 {
   margin-top: 20px;
 }
@@ -107,21 +113,45 @@ body {
 .padding\:bottom\:56 {
   padding-bottom: 56px;
 }
+.padding\:top\:40 {
+  padding-top: 40px;
+}
+.padding\:bottom\:40 {
+  padding-bottom: 40px;
+}
+.padding\:top\:48 {
+  padding-top: 48px;
+}
+.padding\:bottom\:48 {
+  padding-bottom: 48px;
+}
+.text\:right {
+  text-align: right;
+}
+.padding\:top\:40 {
+  padding-top: 40px;
+}
+.padding\:top\:80 {
+  padding-top: 80px;
+}
+.padding\:bottom\:80 {
+  padding-bottom: 80px;
+}
+.padding\:20 {
+  padding: 20px;
+}
 .width\:790 {
   max-width: 790px;
 }
-
 textarea {
   resize: none;
 }
-
 .section__title {
-  font-family: CeraPro-Bold;
+  font-family: var(--font-700);
   font-size: 32px;
   line-height: 40px;
   color: #231f20;
 }
-
 body {
   min-height: 100vh;
   display: grid;
@@ -132,7 +162,6 @@ body {
     "main"
     "footer";
 }
-
 header {
   grid-area: header;
 }
@@ -146,30 +175,20 @@ main {
 footer {
   grid-area: footer;
 }
-
 .button {
   margin: 0 auto;
   display: inline-block;
   padding: 8px 24px;
-  font-family: CeraPro-Medium;
+  font-family: var(--font-500);
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.15em;
   color: #ffffff;
-
   &.button__solid {
     background-color: #c19453;
   }
 }
-
-.padding\:top\:40 {
-  padding-top: 40px;
-}
-.padding\:bottom\:40 {
-  padding-bottom: 40px;
-}
-
 .global__market--blogs--list {
   display: grid;
   gap: 30px;
@@ -182,7 +201,7 @@ footer {
     .blog__card--mini--content {
       padding: 24px 16px;
       .blog__card--mini--content--title {
-        font-family: CeraPro-Medium;
+        font-family: var(--font-500);
         font-size: 20px;
         line-height: 25px;
         color: #000000;
@@ -190,20 +209,18 @@ footer {
       }
       p {
         margin-bottom: 24px;
-        font-family: CeraPro-Light;
+        font-family: var(--font-300);
         font-size: 14px;
         line-height: 18px;
-
         color: #000000;
       }
       .blog__card--mini--content--readMore {
-        font-family: CeraPro-Medium;
+        font-family: var(--font-500);
         font-size: 12px;
         line-height: 15px;
         /* identical to box height */
         text-align: center;
         letter-spacing: 0.05em;
-
         /* GM/Primary Color */
         color: #c19453;
       }
@@ -214,9 +231,8 @@ footer {
     }
   }
 }
-
 p {
-  font-family: CeraPro-Light;
+  font-family: var(--font-300);
   font-size: 16px;
   line-height: 20px;
   color: #231f20;
@@ -224,48 +240,41 @@ p {
     margin-top: 16px;
   }
 }
-
-ul:not(.header__menu--items, .heaader__menu--items) {
+ul:not(.header__menu--items, .heaader__menu--items, .submenu) {
   margin-left: 40px;
   li {
     list-style-type: disc;
-    font-family: CeraPro-Light;
+    font-family: var(--font-300);
     font-size: 16px;
     line-height: 20px;
     color: #000000;
   }
 }
-
 .shop__information-timing--title + ul {
   margin-left: 0;
   li {
     list-style: none;
   }
 }
-
 form {
   .form__input--wrapper:not(:last-child) {
     margin-bottom: 24px;
   }
-
   .form__input--label {
     display: block;
     width: 100%;
   }
-
   .form__input--field {
     padding: 8px 0;
     display: block;
     width: 100%;
     border-bottom: 1px solid #747474;
   }
-
   textarea {
     height: 112px;
   }
-
   .form__input--button {
-    font-family: CeraPro-Medium;
+    font-family: var(--font-500);
     font-size: 14px;
     line-height: 18px;
     text-align: center;

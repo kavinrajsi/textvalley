@@ -1,48 +1,48 @@
 %desktop-h1-48 {
   line-height: normal;
-  font-family: CeraPro-Bold;
+  font-family: var(--font-700);
   font-size: 48px;
   line-height: 54px;
 }
 
 %desktop-h2-32 {
   line-height: normal;
-  font-family: CeraPro-Bold;
+  font-family: var(--font-700);
   font-size: 32px;
   line-height: 40px;
 }
 
 %desktop-h3-24 {
   line-height: normal;
-  font-family: CeraPro-Bold;
+  font-family: var(--font-700);
   font-size: 24px;
   line-height: 30px;
 }
 
 %desktop-h4-20 {
   line-height: normal;
-  font-family: CeraPro-Medium;
+  font-family: var(--font-500);
   font-size: 20px;
   line-height: 24px;
 }
 
 %desktop-h5-18 {
   line-height: normal;
-  font-family: CeraPro-Bold;
+  font-family: var(--font-700);
   font-size: 18px;
   line-height: 22px;
 }
 
 %body-1-16 {
   line-height: normal;
-  font-family: CeraPro-Light;
+  font-family: var(--font-300);
   font-size: 16px;
   line-height: 20px;
 }
 
 %body-2-14 {
   line-height: normal;
-  font-family: CeraPro-Light;
+  font-family: var(--font-300);
   font-size: 14px;
   line-height: 18px;
 }
@@ -50,13 +50,13 @@
 
 
 strong{
-  font-family: CeraPro-Medium;
+  font-family: var(--font-500);
 }
 
 // @media (min-width: 768px) {
 //   %desktop-h1-48 {
 //     line-height: normal;
-//     font-family: CeraPro-Black;
+//     font-family: var(--font-900);
 //     font-size: 48px;
 //   }
 // }

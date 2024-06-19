@@ -6,7 +6,7 @@
     padding: 16px;
   }
   .meida__grid--card__content--timestamp {
-font-family: CeraPro-Light;
+font-family: var(--font-300);
     font-size: 14px;
     line-height: 18px;
     color: #231f20;
@@ -15,7 +15,7 @@ font-family: CeraPro-Light;
   .meida__grid--card__content--title {
     margin-top: 4px;
 
-    font-family: CeraPro-Bold;
+    font-family: var(--font-700);
     font-size: 18px;
     line-height: 22px;
     color: #231f20;
@@ -29,7 +29,7 @@ font-family: CeraPro-Light;
     padding: 2px 9px;
     text-align: center;
     display: inline-block;
-    font-family: CeraPro-Bold;
+    font-family: var(--font-700);
     font-size: 18px;
     line-height: 22px;
     color: #231f20;

@@ -5,7 +5,7 @@
 .blog__detail--content {
   margin-top: 32px;
   .content__time--stamp {
-    font-family: CeraPro-Bold;
+    font-family: var(--font-700);
     font-size: 18px;
     line-height: 22px;
     color: #c19453;
@@ -14,13 +14,13 @@
   .content__title {
     margin-top: 16px;
     margin-bottom: 32px;
-    font-family: CeraPro-Bold;
+    font-family: var(--font-700);
     font-size: 24px;
     line-height: 30px;
     color: #231f20;
   }
   p {
-    font-family: CeraPro-Light;
+    font-family: var(--font-300);
     font-size: 16px;
     line-height: 20px;
     color: #231f20;
