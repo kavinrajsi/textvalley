@@ -120,6 +120,8 @@
           <li class="header__menu-item"><a href="./contact.html">CONTACT US</a></li>
           <li class="header__menu-item"><a href="#">VOH</a></li>
         </ul>
+        <div class="header__navigation--button"><div class="menu-icon" id="menuIcon"><div class="menu-icon__line menu-icon__line--top"></div><div class="menu-icon__line menu-icon__line--middle"></div><div class="menu-icon__line menu-icon__line--bottom"></div></div></div>
+         
       </nav>
       <div class="header__happening--timing">
         <div class="header__happening--select">
@@ -152,11 +154,14 @@
     </div>
   </header>
   <main>
-    <section class="container__box display:grid card_by_3">
+    <section class="container__box padding:top:40 padding:bottom:40 display:grid card_by_3">
 
       <div class="card__website--list">
         <div class="image">
-          <img src="./images/global-market.png" alt="">
+          <picture>
+            <source srcset="./images/global-market.png" media="(min-width: 768px)">
+            <img src="./images/global-market-mobile.png" alt="">
+          </picture>
         </div>
         <div class="content">
           <img src="./images/global-market-logo.png" alt="">
@@ -166,18 +171,24 @@
 
       <div class="card__website--list">
         <div class="image">
-          <img src="./images/value-mall.png" alt="">
+          <picture>
+            <source srcset="./images/value-mall.png" media="(min-width: 768px)">
+            <img src="./images/value-mall-mobile.png" alt="">
+          </picture>
         </div>
         <div class="content">
           <img src="./images/value-mall-logo.png" alt="">
-          <a href="#" target="_blank">CLICK HERE TO ENTER</a>
+          <a href="./valuemall-home.html" target="_blank">CLICK HERE TO ENTER</a>
         </div>
       </div>
 
 
       <div class="card__website--list">
         <div class="image">
-          <img src="./images/big-box-bazaar.png" alt="">
+          <picture>
+            <source srcset="./images/big-box-bazaar.png" media="(min-width: 768px)">
+            <img src="./images/big-box-bazaar-mobile.png" alt="">
+          </picture>
         </div>
         <div class="content">
           <img src="./images/big-box-bazzar-logo.png" alt="">

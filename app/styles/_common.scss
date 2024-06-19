@@ -42,10 +42,14 @@ body {
   align-items: flex-end;
 }
 .card_by_2 {
-  grid-template-columns: 1fr 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .card_by_3 {
-  grid-template-columns: 1fr 1fr 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .card_by_8\:4 {
   @media (min-width: 768px) {
@@ -61,30 +65,38 @@ body {
   }
 }
 .card_by_4\:8 {
-  grid-template-columns: repeat(12, 1fr);
-  > div {
-    &:first-child {
-      grid-column: span 4;
-    }
-    &:last-child {
-      grid-column: span 8;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 1fr);
+    > div {
+      &:first-child {
+        grid-column: span 4;
+      }
+      &:last-child {
+        grid-column: span 8;
+      }
     }
   }
 }
 .gallery__images {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .media__grid--lists {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .offer__brand--lists {
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(4, 1fr);
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .margin\:top\:20 {
   margin-top: 20px;
@@ -152,7 +164,7 @@ textarea {
   line-height: 40px;
   color: #231f20;
 }
-body {
+body.page-main {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -161,7 +173,7 @@ body {
     "header"
     "main"
     "footer";
-}
+
 header {
   grid-area: header;
 }
@@ -174,6 +186,7 @@ main {
 }
 footer {
   grid-area: footer;
+}
 }
 .button {
   margin: 0 auto;
