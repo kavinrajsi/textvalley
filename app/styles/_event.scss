@@ -96,6 +96,7 @@
   .event__list {
 
     display: flex;
+    gap: 16px;
     flex-direction: column;
     @media (min-width: 768px) {
       display: grid;

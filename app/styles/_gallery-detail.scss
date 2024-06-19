@@ -10,6 +10,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #231f20;
+
   }
 
   .gallery__images {
@@ -20,5 +21,11 @@
       gap: 30px;
       grid-template-columns: repeat(4, 1fr);
     }
+  }
+}
+
+.gallery__content {
+  ul{
+    margin-left: 14px;
   }
 }

@@ -370,6 +370,11 @@
     color: #fff;
     }
   }
+  .header__global--mall .header__menu .header__menu--items .header__menu-item.active a {
+    @media (max-width: 939.98px) {
+    color: #c19453;
+    }
+  }
 }
 
 @media (max-width: 939.98px) {

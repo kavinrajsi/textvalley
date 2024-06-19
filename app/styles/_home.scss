@@ -60,6 +60,11 @@
 .discover__more--image {
   position: relative;
   .discover__more--content {
+
+    @media (min-width: 768px) {
+    width: calc(100% - 16px - 16px);
+    height: 158px;
+    }
     position: absolute;
     bottom: 0;
     right: 0;

@@ -240,14 +240,21 @@ form {
   .form__input--label {
     display: block;
     width: 100%;
+    font-family: var(--font-300);
   }
   .form__input--field {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: var(--font-300);
     padding: 8px 0;
     display: block;
     width: 100%;
     border-bottom: 1px solid #747474;
   }
   textarea {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: var(--font-300);
     height: 112px;
   }
   .form__input--button {
@@ -266,6 +273,7 @@ form {
   min-height: 300px;
   @media(min-width: 768px){
    min-height: initial;
+   width: 100%;
   }
   object-fit: cover;
 }
