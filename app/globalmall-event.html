@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gallery Detail</title>
+  <title>Event</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/main.css -->
@@ -17,7 +17,6 @@
   <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <header class="header__main header__global--mall">
       <div class="header__logo--wrapper container__box display:flex justify-content:between">
         <div class="header__logo">
@@ -161,12 +160,12 @@
         <nav class="container__box">
           <ul class="header__menu--items">
             <li class="header__menu-item"><a href="./globalmall-home.html">HOME</a></li>
-            <li class="header__menu-item "><a href="./globalmall-about.html">About Us</a></li>
+            <li class="header__menu-item"><a href="./globalmall-about.html">About Us</a></li>
             <li class="header__menu-item"><a href="./globalmall-shop.html">WHOLESALE AND RETAIL SHOPS</a></li>
             <li class="header__menu-item"><a href="./globalmall-leasing.html">LEASING</a></li>
             <li class="header__menu-item"><a href="./globalmall-investment.html">INVESTMENT</a></li>
             <li class="header__menu-item"><a href="./globalmall-buyers.html">BUYERS</a></li>
-            <li class="header__menu-item"><a href="#">VISIT</a>
+            <li class="header__menu-item active has-submenu"><a href="#">VISIT</a>
               <ul class="submenu">
                 <li class="header__menu-item"><a href="./globalmall-facilities.html">FACILITIES</a></li>
                 <li class="header__menu-item"><a href="./globalmall-event.html">EVENTS</a></li>
@@ -180,8 +179,8 @@
             </ul>
           </li>
           </ul>
-          <div class="header__logos">
-            <a href="./globalmall-home.html">
+        <div class="header__logos">
+          <a href="http://localhost:9000/valuemall-home.html">
               <svg width="49" height="25" viewBox="0 0 49 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_2022_10267)">
                   <path
@@ -377,34 +376,126 @@
     </header>
   
 
-  <main class="page__gallery--detail">
+  <main class="page__event">
+    <section class="container__fluid banner margin:top:20 margin:bottom:56">
+      <img src="./images/event-cover-image.png" alt="">
+    </section>
+
     <section class="container__box margin:top:56 margin:bottom:56 display:grid align:center card_by_4:8 gallery__intro">
       <div class="section__title">
-        <h1>TAG EXPO 2023</h1>
+        <h1>Events</h1>
       </div>
       <div class="gallery__content">
-        <p>Lorem ipsum dolor sit amet consectetur. Leo tincidunt nibh ac commodo lectus ac sed. Vel posuere vel mauris
-          vestibulum porta nascetur. Nisl tempor malesuada condimentum ornare ultrices convallis. Accumsan purus est
-          facilisi vel amet sed ac at.</p>
+        <p>Tellus id sit aliquam diam scelerisque dictum porttitor tempor. Nulla eget elit tortor lacus commodo suscipit
+          a tellus. Blandit in enim ultrices vulputate morbi velit ac.</p>
       </div>
     </section>
-    <section class="container__box margin:bottom:56 display:grid align:center">
-      <div class="gallery__images">
-        <div class="gallery__image"><img src="./images/gallery-image-1.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-2.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-3.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-4.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-5.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-6.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-7.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-8.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-9.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-10.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-11.png" alt=""></div>
-        <div class="gallery__image"><img src="./images/gallery-image-12.png" alt=""></div>
+
+    <section class="container__box margin:bottom:40 current--event__list">
+      <div class="event__lists">
+        <div class="event__list">
+          <div class="event__list--image">
+            <img src="./images/event-list-1.png" alt="">
+          </div>
+          <div class="event__list--content">
+            <div class="event__list--content__timestramp">May 1 - June 16</div>
+            <div class="event__list--content__title">Summer Jolly 2024</div>
+          </div>
+        </div>
+        <div class="event__list">
+          <div class="event__list--image">
+            <img src="./images/event-list-2.png" alt="">
+          </div>
+          <div class="event__list--content">
+            <div class="event__list--content__timestramp">March 8 - March 18</div>
+            <div class="event__list--content__title">Pennin Perumai</div>
+          </div>
+        </div>
+        <div class="event__list">
+          <div class="event__list--image">
+            <img src="./images/event-list-3.png" alt="">
+          </div>
+          <div class="event__list--content">
+            <div class="event__list--content__timestramp">October 8 & 15 & 22</div>
+            <div class="event__list--content__title">The Big Discount Sale</div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section class="container__box margin:bottom:56 upcoming--event__list">
+      <div class="section__title margin:top:56 margin:bottom:56">Upcoming Events</div>
+      <div class="event__lists">
+        <div class="event__list">
+          <div class="event__list--timestramp">
+            <span>June <br> 01 </span>
+            <span>June <br> 16</span>
+          </div>
+          <div class="event__list--image">
+            <img src="./images/event-list-1.png" alt="">
+          </div>
+          <div class="event__list--content">
+            <div class="event__list--content__title">Summer Jolly 2024</div>
+            <div class="event__list--content__intro">Lorem ipsum dolor sit amet consectetur. Quam integer senectus a
+              tellus. Nunc scelerisque vel sit odio gravida phasellus velit elementum velit.</div>
+          </div>
+        </div>
+        <div class="event__list">
+          <div class="event__list--timestramp">
+            <span>June <br> 01 </span>
+            <span>June <br> 16</span>
+          </div>
+          <div class="event__list--image">
+            <img src="./images/event-list-4.png" alt="">
+          </div>
+          <div class="event__list--content">
+            <div class="event__list--content__title">Summer Jolly 2024</div>
+            <div class="event__list--content__intro">Lorem ipsum dolor sit amet consectetur. Quam integer senectus a
+              tellus. Nunc scelerisque vel sit odio gravida phasellus velit elementum velit.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="container__box margin:bottom:56 past--event__list">
+      <div class="section__title margin:top:56 margin:bottom:56">Past Events</div>
+      <div class="event__lists">
+        <div class="event__list">
+          <div class="event__list--timestramp">
+            <span>May <br> 01 </span>
+            <span>May <br> 16</span>
+          </div>
+          <div class="event__list--image">
+            <img src="./images/event-list-5.png" alt="">
+          </div>
+          <div class="event__list--content">
+            <div class="event__list--content__title">Summer Jolly 2024</div>
+            <div class="event__list--content__intro">Lorem ipsum dolor sit amet consectetur. Quam integer senectus a
+              tellus. Nunc scelerisque vel sit odio gravida phasellus velit elementum velit.</div>
+          </div>
+        </div>
+        <div class="event__list">
+          <div class="event__list--timestramp">
+            <span>May <br> 10 </span>
+            <span>May <br> 27</span>
+          </div>
+          <div class="event__list--image">
+            <img src="./images/event-list-6.png" alt="">
+          </div>
+          <div class="event__list--content">
+            <div class="event__list--content__title">Summer Jolly 2024</div>
+            <div class="event__list--content__intro">Lorem ipsum dolor sit amet consectetur. Quam integer senectus a
+              tellus. Nunc scelerisque vel sit odio gravida phasellus velit elementum velit.</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
+
 
 
   <footer class="footer__main">
@@ -649,7 +740,7 @@
           <span>ABOUT</span>
           <ul>
             <li><a href="./globalmall-contact.html">Contact Us</a></li>
-            <li><a href="./career.html">Careers</a></li>
+            <li><a href="./globalmall-career.html">Careers</a></li>
             <li><a href="./globalmall-media.html">Media</a></li>
           </ul>
         </nav>

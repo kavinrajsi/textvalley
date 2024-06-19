@@ -1,10 +1,28 @@
+.page__global--market{
+  .sliderBanner{
+    img{
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+}
+
 .global__market--overview {
+  margin-top:24px;
+  margin-bottom:24px;
+  @media(min-width: 768px){
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
   .global__market--overview__content {
     .overview__content--title {
       /* GM/H2 */
-font-family: var(--font-700);
+      font-family: var(--font-700);
+      font-size: 26px;
+      @media(min-width: 768px){
       font-size: 32px;
       line-height: 40px;
+      }
 
       /* GM/Dark Black */
       color: #231f20;
@@ -32,8 +50,11 @@ font-family: var(--font-700);
 }
 .discover__more--lists {
   display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  @media (min-width: 768px) {
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .discover__more--image {
@@ -78,17 +99,65 @@ font-family: var(--font-700);
 }
 
 .tag__expo-card {
-  img {
+  img,
+  iframe {
     width: 100%;
+    height: 500px;
   }
 }
 
-
-.global__market--blogs{
-  background-color: #231F20;
-  .section__title{
+.global__market--blogs {
+  background-color: #231f20;
+  .section__title {
     color: #fff;
   }
 }
 
-
+.global__market--blogs--list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  overflow: scroll;
+  @media (min-width: 768px) {
+    overflow: hidden;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &.global__market--event--list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .blog__card--mini {
+    min-width: 240px;
+    background-color: #fff;
+    .blog__card--mini--content {
+      padding: 24px 16px;
+      .blog__card--mini--content--title {
+        font-family: var(--font-500);
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+        margin-bottom: 8px;
+      }
+      p {
+        margin-bottom: 24px;
+        font-family: var(--font-300);
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+      }
+      .blog__card--mini--content--readMore {
+        font-family: var(--font-500);
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #c19453;
+      }
+      .icon {
+        display: inline-block;
+        margin-left: 8px;
+      }
+    }
+  }
+}

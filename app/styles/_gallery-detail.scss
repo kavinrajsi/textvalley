@@ -1,16 +1,24 @@
-.gallery__title {
-font-family: var(--font-700);
-  font-size: 32px;
-  line-height: 40px;
-  color: #231f20;
-}
-.gallery__content {font-family: var(--font-300);
-  font-size: 16px;
-  line-height: 20px;
-  color: #231f20;
-}
-.gallery__images{
+.page__gallery--detail {
+  .gallery__title {
+    font-family: var(--font-700);
+    font-size: 32px;
+    line-height: 40px;
+    color: #231f20;
+  }
+  .gallery__content {
+    font-family: var(--font-300);
+    font-size: 16px;
+    line-height: 20px;
+    color: #231f20;
+  }
 
+  .gallery__images {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 768px) {
+      gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
-
-

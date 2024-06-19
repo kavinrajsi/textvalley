@@ -1,19 +1,54 @@
-.contact__detail {
-  background-color: #fdf7eb;
-}
+.page__contact {
+  .contact__detail {
+    background-color: #fdf7eb;
+  }
 
-.contact__detail--title {
-  font-family: var(--font-700);
-  font-size: 32px;
-  line-height: 40px;
-  color: #000000;
-  margin-bottom: 16px;
-}
+  .contact__detail--title {
+    font-family: var(--font-700);
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 16px;
+  }
 
-.contact__detail--address {
-  margin-bottom: 16px;
+  .contact__detail--address {
+    margin-bottom: 16px;
 
-  .contact__detail--address--title {
+    .contact__detail--address--title {
+      /* GM/H4 */
+      font-family: var(--font-500);
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height, or 120% */
+
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    address {
+      strong {
+        font-family: var(--font-500);
+      }
+
+      /* GM/B1 */
+      font-family: var(--font-300);
+      font-size: 16px;
+      line-height: 20px;
+      /* or 125% */
+
+      color: #000000;
+    }
+  }
+
+  .contact__detail--investor,
+  .contact__detail--trade {
+    margin-bottom: 16px;
+
+    span,
+    a {
+      display: inline-block;
+    }
+
     /* GM/H4 */
     font-family: var(--font-500);
     font-size: 20px;
@@ -21,55 +56,32 @@
     /* identical to box height, or 120% */
 
     color: #000000;
-    margin-bottom: 8px;
   }
 
-  address {
-    strong {
-      font-family: var(--font-500);
+  .contact__detail--form {
+    margin-top: 32px;
+    padding: 24px 16px;
+    background-color: #ffffff;
+
+    .contact__detail--form__title {
+      text-align: center;
+
+      font-family: var(--font-700);
+      font-size: 24px;
+      line-height: 30px;
+      color: #000000;
+      margin-bottom: 24px;
     }
-
-    /* GM/B1 */
-    font-family: var(--font-300);
-    font-size: 16px;
-    line-height: 20px;
-    /* or 125% */
-
-    color: #000000;
-  }
-}
-
-.contact__detail--investor,
-.contact__detail--trade {
-  margin-bottom: 16px;
-
-  span,
-  a {
-    display: inline-block;
   }
 
-  /* GM/H4 */
-  font-family: var(--font-500);
-  font-size: 20px;
-  line-height: 24px;
-  /* identical to box height, or 120% */
-
-  color: #000000;
-}
-
-.contact__detail--form {
-  margin-top: 32px;
-  padding: 24px 16px;
-  background-color: #ffffff;
-
-  .contact__detail--form__title {
-    text-align: center;
-
-    font-family: var(--font-700);
-    font-size: 24px;
-    line-height: 30px;
-    color: #000000;
-    margin-bottom: 24px;
+  .contact__map {
+    iframe {
+      width: 100%;
+      height: 500px;
+      @media (min-width: 768px) {
+        height: 800px;
+      }
+    }
   }
 }
 

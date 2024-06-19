@@ -1,12 +1,15 @@
 .media__grid--card {
   background-color: #fff;
   .media__grid--card__image--wrapper {
+    img{
+      width: 100%;
+    }
   }
   .meida__grid--card__content {
     padding: 16px;
   }
   .meida__grid--card__content--timestamp {
-font-family: var(--font-300);
+    font-family: var(--font-300);
     font-size: 14px;
     line-height: 18px;
     color: #231f20;
@@ -23,6 +26,7 @@ font-family: var(--font-300);
 }
 
 .pagination__list {
+  display: none;
   text-align: center;
   a {
     min-height: 24px;

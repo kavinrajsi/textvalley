@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact</title>
+  <title>texvalley</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
@@ -17,10 +18,10 @@
   <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <header class="header__main">
+  <header class="header__main header__global--mall">
     <div class="header__logo--wrapper container__box display:flex justify-content:between">
       <div class="header__logo">
-        <a href="./global.html">
+        <a href="./globalmall-home.html">
           <svg width="93" height="80" viewBox="0 0 93 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2017_8223)">
               <path
@@ -159,17 +160,28 @@
     <div class="header__menu">
       <nav class="container__box">
         <ul class="header__menu--items">
-          <li class="header__menu-item"><a href="./global.html">HOME</a></li>
-          <li class="header__menu-item"><a href="./about.html">About Us</a></li>
-          <li class="header__menu-item"><a href="./shop.html">WHOLESALE AND RETAIL SHOPS</a></li>
-          <li class="header__menu-item"><a href="./leasing.html">LEASING</a></li>
-          <li class="header__menu-item"><a href="./investment.html">INVESTMENT</a></li>
-          <li class="header__menu-item"><a href="./buyers.html">BUYERS</a></li>
-          <li class="header__menu-item"><a href="">VISIT</a></li>
-          <li class="header__menu-item active"><a href="./contact.html">CONTACT US</a></li>
+          <li class="header__menu-item active"><a href="./globalmall-home.html">HOME</a></li>
+          <li class="header__menu-item"><a href="./globalmall-about.html">About Us</a></li>
+          <li class="header__menu-item"><a href="./globalmall-shop.html">WHOLESALE AND RETAIL SHOPS</a></li>
+          <li class="header__menu-item"><a href="./globalmall-leasing.html">LEASING</a></li>
+          <li class="header__menu-item"><a href="./globalmall-investment.html">INVESTMENT</a></li>
+          <li class="header__menu-item"><a href="./globalmall-buyers.html">BUYERS</a></li>
+          <li class="header__menu-item has-submenu"><a href="#">VISIT</a>
+            <ul class="submenu">
+              <li class="header__menu-item"><a href="./globalmall-facilities.html">FACILITIES</a></li>
+              <li class="header__menu-item"><a href="./globalmall-event.html">EVENTS</a></li>
+          </ul>
+        </li>
+          <li class="header__menu-item has-submenu"><a href="#">CONTACT US</a>
+            <ul class="submenu">
+              <li class="header__menu-item"><a href="./globalmall-media.html">MEDIA</a></li>
+              <li class="header__menu-item"><a href="./globalmall-career.html">CAREERS</a></li>
+              <li class="header__menu-item"><a href="./globalmall-contact.html">CONTACT US</a></li>
+          </ul>
+        </li>
         </ul>
         <div class="header__logos">
-          <a href="#">
+          <a href="http://localhost:9000/valuemall-home.html">
             <svg width="49" height="25" viewBox="0 0 49 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2022_10267)">
                 <path
@@ -359,68 +371,234 @@
             </svg>
           </a>
         </div>
+        <div class="header__navigation--button"><div class="menu-icon" id="menuIcon"><div class="menu-icon__line menu-icon__line--top"></div><div class="menu-icon__line menu-icon__line--middle"></div><div class="menu-icon__line menu-icon__line--bottom"></div></div></div>
       </nav>
     </div>
   </header>
 
-  <main class="page__contact">
-    <section class="container__box margin:top:56 margin:bottom:56 display:grid align:center card_by_2">
-      <div class="contact__map">
-        <img src="./images/contact-map.png" alt="">
+  <main class="page__global--market">
+    <section class="container__fluid sliderBanner margin:top:20 margin:bottom:56">
+      <div class="carousel">
+        <div class="carousel-cell">
+          <img src="./images/facilities-cover-image.png" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="./images/shop-cover-image.png" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="./images/event-cover-image.png" alt="">
+        </div>
       </div>
-      <div class="contact__detail">
-        <h2 class="contact__detail--title">Texvalley Global Market General Information</h2>
-        <div class="contact__detail--address">
-          <div class="contact__detail--address--title">Address</div>
-          <address><strong>Texvalley</strong>,<br> Bengaluru - Cochin National Highway, Chithode,<br> Erode - 638102.
-            Tamilnadu. India</address>
-        </div>
-        <div class="contact__detail--investor">
-          <span>For Investment Enquiries : </span>
-          <a href="tel:+918508188999">85081 88999</a>
-        </div>
-        <div class="contact__detail--trade">
-          <span class="">For Trade Enquiries : </span>
-          <a href="tel:+919585460000">95854 60000</a>
-        </div>
-        <div class="contact__detail--form">
-          <div class="contact__detail--form__title">You can also contact us by using this form:</div>
-          <form action="#">
-            <div class="form__input--wrapper">
-              <label class="form__input--label hidden" for="name">Your Name</label>
-              <input class="form__input--field" type="text" id="name" name="name" placeholder="Your Name" required>
+
+    </section>
+    <section class="container__box margin:bottom:56 display:grid card_by_8:4 global__market--overview">
+      <div class="global__market--overview__content">
+        <h2 class="overview__content--title">
+          Overview of Global Market
+        </h2>
+        <p>Global Market by Texvalley is your exclusive B2B and B2C textile marketplace.</p>
+        <p>With plug-and-play infrastructure models and cutting-edge amenities, Texvalley is the largest and premier
+          destination for textile manufacturers, retailers, and traders alike. With comprehensive services, including
+          sourcing, warehousing, logistics, and banking services, It stands as the largest sourcing and buying market
+          for textiles, garments, accessories, home linen, hosiery, and more.</p>
+        <a href="./globalmall-about.html" class="button button__solid">LEARN MORE</a>
+      </div>
+      <div class="global__market--overview__number">
+        <img src="./images/global-market-no.png" alt="">
+        <!-- <img src="./images/global-market-no.svg" alt=""> -->
+      </div>
+    </section>
+    <section class="container__fluid padding:top:56 padding:bottom:56 global__market--discover">
+      <div class="container__box ">
+        <h2 class="section__title margin:bottom:24">Global Market is for</h2>
+        <div class="discover__more--lists">
+          <div class="discover__more--list">
+            <div class="discover__more--image">
+              <img src="./images/discover-more-leasing.png" alt="" />
+              <div class="discover__more--content">
+                <h3 class="discover__more--content__title">Leasing</h3>
+                <p>Set up a store and become a brand in South India's largest textile mall and destination.</p>
+                <a href="./globalmall-leasing.html" class="button button__solid">LEARN MORE </a>
+              </div>
             </div>
-            <div class="form__input--wrapper">
-              <label class="form__input--label hidden" for="mobile">Mobile Number</label>
-              <input class="form__input--field" type="tel" id="mobile" name="mobile" placeholder="Mobile Number"
-                required>
+          </div>
+          <div class="discover__more--list">
+            <div class="discover__more--image">
+              <img src="./images/discover-more-renting.png" alt="" />
+              <div class="discover__more--content">
+                <h3 class="discover__more--content__title">Investment</h3>
+                <p>Invest in Global Market for assured ROI and
+                  peace of mind.</p>
+                <a href="./globalmall-investment.html" class="button button__solid">LEARN MORE </a>
+              </div>
             </div>
-            <div class="form__input--wrapper">
-              <label class="form__input--label hidden" for="email">Email</label>
-              <input class="form__input--field" type="email" id="email" name="mobile" placeholder="Email" required>
+          </div>
+          <div class="discover__more--list">
+            <div class="discover__more--image">
+              <img src="./images/discover-more-fdc.png" alt="" />
+              <div class="discover__more--content">
+                <h3 class="discover__more--content__title">FDC</h3>
+                <p>A platform to unleash the designer in you.</p>
+                <a href="./fdc.html" class="button button__solid">LEARN MORE </a>
+              </div>
             </div>
-            <div class="form__input--wrapper">
-              <label class="form__input--label hidden" for="subject">Subject</label>
-              <input class="form__input--field" type="text" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="discover__more--list">
+            <div class="discover__more--image">
+              <img src="./images/discover-more-venue-hire.png" alt="" />
+              <div class="discover__more--content">
+                <h3 class="discover__more--content__title">Venue on hire</h3>
+                <p>Perfect indoor and outdoor, business and entertainment event space.</p>
+                <a href="./venue-hire.html" class="button button__solid">LEARN MORE </a>
+              </div>
             </div>
-            <div class="form__input--wrapper">
-              <label class="form__input--label hidden" for="message">Subject</label>
-              <textarea class="form__input--field" name="message" id="message" cols="30" rows="10"
-                placeholder="Message"></textarea>
+          </div>
+          <div class="discover__more--list">
+            <div class="discover__more--image">
+              <img src="./images/discover-more-buyers.png" alt="" />
+              <div class="discover__more--content">
+                <h3 class="discover__more--content__title">Buyers</h3>
+                <p>Global sourcing community of retailers, wholesalers and traders..</p>
+                <a href="./globalmall-buyers.html" class="button button__solid">LEARN MORE </a>
+              </div>
             </div>
-            <div class="form__input--wrapper">
-              <input class="form__input--button" type="button" value="SUBMIT">
+          </div>
+          <div class="discover__more--list">
+            <div class="discover__more--image">
+              <img src="./images/discover-more-wholesale-shops.png" alt="" />
+              <div class="discover__more--content">
+                <h3 class="discover__more--content__title">Wholesale Shops</h3>
+                <p>Tellus id sit aliquam diam scelerisque dictum porttitor tempor.</p>
+                <a href="./globalmall-shop.html" class="button button__solid">LEARN MORE </a>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="container__fluid padding:top:56 padding:bottom:56 global__market--events">
+      <div class="container__box">
+        <h2 class="section__title margin:bottom:24">Events</h2>
+      </div>
+        <div class="container__box current--event__list">
+          <div class="event__lists">
+            <div class="event__list">
+              <div class="event__list--image">
+                <img src="./images/event-list-1.png" alt="">
+              </div>
+              <div class="event__list--content">
+                <div class="event__list--content__timestramp">May 1 - June 16</div>
+                <div class="event__list--content__title">Summer Jolly 2024</div>
+              </div>
+            </div>
+            <div class="event__list">
+              <div class="event__list--image">
+                <img src="./images/event-list-2.png" alt="">
+              </div>
+              <div class="event__list--content">
+                <div class="event__list--content__timestramp">March 8 - March 18</div>
+                <div class="event__list--content__title">Pennin Perumai</div>
+              </div>
+            </div>
+            <div class="event__list">
+              <div class="event__list--image">
+                <img src="./images/event-list-3.png" alt="">
+              </div>
+              <div class="event__list--content">
+                <div class="event__list--content__timestramp">October 8 & 15 & 22</div>
+                <div class="event__list--content__title">The Big Discount Sale</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container__fluid padding:20 tag__expo-card">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/R1C6ubc0E08?si=FXLfcg53Irid1ZQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section class="container__fluid padding:top:40 padding:bottom:40 global__market--blogs">
+      <div class="container__box">
+        <h2 class="section__title margin:bottom:24">Blogs</h2>
+      </div>
+      <div class="container__box">
+        <div class="global__market--blogs--list">
+
+          <div class="blog__card--mini">
+            <a href="./globalmall-blog-detail.html">
+              <img src="./images/blog-card-1.png" />
+              <div class="blog__card--mini--content">
+                <h4 class="blog__card--mini--content--title">Lorem ipsum dolor sit amet consectetur</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Sagittis massa porta nec libero. Id enim bibendum elit dolor.
+                  Enim euismod maecenas vitae mattis. Mollis consequat elementum urna egestas in tortor gravida cum. In
+                  diam lectus sed scelerisque vitae neque sem.</p>
+                <span class="blog__card--mini--content--readMore">READ MORE
+                  <span class="icon">
+                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 5.5C0 5.35268 0.0585233 5.21139 0.162696 5.10722C0.266868 5.00305 0.408156 4.94452 0.555478 4.94452H13.657L10.1608 1.44946C10.0565 1.34515 9.9979 1.20369 9.9979 1.05618C9.9979 0.908671 10.0565 0.767205 10.1608 0.662901C10.2651 0.558597 10.4066 0.5 10.5541 0.5C10.7016 0.5 10.843 0.558597 10.9474 0.662901L15.3912 5.10672C15.4429 5.15832 15.4839 5.21962 15.5119 5.2871C15.54 5.35459 15.5544 5.42694 15.5544 5.5C15.5544 5.57306 15.54 5.64541 15.5119 5.7129C15.4839 5.78038 15.4429 5.84168 15.3912 5.89328L10.9474 10.3371C10.843 10.4414 10.7016 10.5 10.5541 10.5C10.4066 10.5 10.2651 10.4414 10.1608 10.3371C10.0565 10.2328 9.9979 10.0913 9.9979 9.94382C9.9979 9.79631 10.0565 9.65485 10.1608 9.55054L13.657 6.05548H0.555478C0.408156 6.05548 0.266868 5.99695 0.162696 5.89278C0.0585233 5.78861 0 5.64732 0 5.5Z"
+                        fill="#C19453" />
+                    </svg>
+                  </span>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="blog__card--mini">
+            <a href="./globalmall-blog-detail.html">
+              <img src="./images/blog-card-2.png" />
+              <div class="blog__card--mini--content">
+                <h4 class="blog__card--mini--content--title">Lorem ipsum dolor sit amet consectetur</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Sagittis massa porta nec libero. Id enim bibendum elit dolor.
+                  Enim euismod maecenas vitae mattis. Mollis consequat elementum urna egestas in tortor gravida cum. In
+                  diam lectus sed scelerisque vitae neque sem.</p>
+                <span class="blog__card--mini--content--readMore">READ MORE
+                  <span class="icon">
+                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 5.5C0 5.35268 0.0585233 5.21139 0.162696 5.10722C0.266868 5.00305 0.408156 4.94452 0.555478 4.94452H13.657L10.1608 1.44946C10.0565 1.34515 9.9979 1.20369 9.9979 1.05618C9.9979 0.908671 10.0565 0.767205 10.1608 0.662901C10.2651 0.558597 10.4066 0.5 10.5541 0.5C10.7016 0.5 10.843 0.558597 10.9474 0.662901L15.3912 5.10672C15.4429 5.15832 15.4839 5.21962 15.5119 5.2871C15.54 5.35459 15.5544 5.42694 15.5544 5.5C15.5544 5.57306 15.54 5.64541 15.5119 5.7129C15.4839 5.78038 15.4429 5.84168 15.3912 5.89328L10.9474 10.3371C10.843 10.4414 10.7016 10.5 10.5541 10.5C10.4066 10.5 10.2651 10.4414 10.1608 10.3371C10.0565 10.2328 9.9979 10.0913 9.9979 9.94382C9.9979 9.79631 10.0565 9.65485 10.1608 9.55054L13.657 6.05548H0.555478C0.408156 6.05548 0.266868 5.99695 0.162696 5.89278C0.0585233 5.78861 0 5.64732 0 5.5Z"
+                        fill="#C19453" />
+                    </svg>
+                  </span>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="blog__card--mini">
+            <a href="./globalmall-blog-detail.html">
+              <img src="./images/blog-card-3.png" />
+              <div class="blog__card--mini--content">
+                <h4 class="blog__card--mini--content--title">Lorem ipsum dolor sit amet consectetur</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Sagittis massa porta nec libero. Id enim bibendum elit dolor.
+                  Enim euismod maecenas vitae mattis. Mollis consequat elementum urna egestas in tortor gravida cum. In
+                  diam lectus sed scelerisque vitae neque sem.</p>
+                <span class="blog__card--mini--content--readMore">READ MORE
+                  <span class="icon">
+                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 5.5C0 5.35268 0.0585233 5.21139 0.162696 5.10722C0.266868 5.00305 0.408156 4.94452 0.555478 4.94452H13.657L10.1608 1.44946C10.0565 1.34515 9.9979 1.20369 9.9979 1.05618C9.9979 0.908671 10.0565 0.767205 10.1608 0.662901C10.2651 0.558597 10.4066 0.5 10.5541 0.5C10.7016 0.5 10.843 0.558597 10.9474 0.662901L15.3912 5.10672C15.4429 5.15832 15.4839 5.21962 15.5119 5.2871C15.54 5.35459 15.5544 5.42694 15.5544 5.5C15.5544 5.57306 15.54 5.64541 15.5119 5.7129C15.4839 5.78038 15.4429 5.84168 15.3912 5.89328L10.9474 10.3371C10.843 10.4414 10.7016 10.5 10.5541 10.5C10.4066 10.5 10.2651 10.4414 10.1608 10.3371C10.0565 10.2328 9.9979 10.0913 9.9979 9.94382C9.9979 9.79631 10.0565 9.65485 10.1608 9.55054L13.657 6.05548H0.555478C0.408156 6.05548 0.266868 5.99695 0.162696 5.89278C0.0585233 5.78861 0 5.64732 0 5.5Z"
+                        fill="#C19453" />
+                    </svg>
+                  </span>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
 
   <footer class="footer__main">
     <div class="footer__main--logo container__box display:flex justify-content:between ">
       <div class="logo--left">
+        <a href="./index.html">
         <svg width="188" height="34" viewBox="0 0 188 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_2001_3575)">
             <path
@@ -511,6 +689,7 @@
             </clipPath>
           </defs>
         </svg>
+      </a>
       </div>
       <div class="logo--right">
         <svg width="59" height="50" viewBox="0 0 59 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -640,28 +819,28 @@
         <nav>
           <span>DISCOVER</span>
           <ul>
-            <li><a href="./leasing.html">Leasing</a></li>
-            <li><a href="./investment.html">Investment</a></li>
-            <li><a href="./buyers.html">Buyers</a></li>
-            <li><a href="./contact.html">Venue on hire</a></li>
+            <li><a href="./globalmall-leasing.html">Leasing</a></li>
+            <li><a href="./globalmall-investment.html">Investment</a></li>
+            <li><a href="./globalmall-buyers.html">Buyers</a></li>
+            <li><a href="./globalmall-contact.html">Venue on hire</a></li>
             <li><a href="#">FDC</a></li>
           </ul>
         </nav>
         <nav>
           <span>VISIT</span>
           <ul>
-            <li><a href="./facilities.html">Facilities</a></li>
-            <li><a href="./map.html">Map</a></li>
-            <li><a href="./buyers.html">Buyers</a></li>
-            <li><a href="./event.html">Event</a></li>
+            <li><a href="./globalmall-facilities.html">Facilities</a></li>
+            
+            <li><a href="./globalmall-buyers.html">Buyers</a></li>
+            <li><a href="./globalmall-event.html">Event</a></li>
           </ul>
         </nav>
         <nav>
           <span>ABOUT</span>
           <ul>
-            <li><a href="./contact.html">Contact Us</a></li>
-            <li><a href="./career.html">Careers</a></li>
-            <li><a href="./media.html">Media</a></li>
+            <li><a href="./globalmall-contact.html">Contact Us</a></li>
+            <li><a href="./globalmall-career.html">Careers</a></li>
+            <li><a href="./globalmall-media.html">Media</a></li>
           </ul>
         </nav>
       </div>
@@ -724,9 +903,16 @@
   <!-- build:js scripts/vendor.js -->
   <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
   <!-- endbuild -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
+  <script>
+    $('.carousel').flickity({
+      prevNextButtons: false,
+      contain: true
+    });
+  </script>
 </body>
 
 </html>

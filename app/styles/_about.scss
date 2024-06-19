@@ -1,41 +1,61 @@
-.board__directors {
-  background-color: #c19453;
-  .section__title {
-    color: #fff;
-  }
-  .board__director--lists {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .board__directors--content {
-    padding: 16px;
-    background-color: rgba($color: #fff, $alpha: 0.9);
-    .name {
-      font-family: "Cera Pro";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 24px;
-      color: #231f20;
+.page__about {
+  .board__directors {
+    background-color: #c19453;
+    .section__title {
+      color: #fff;
     }
-    .designation {
-      font-family: "Cera Pro";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 18px;
-      color: #231f20;
+    .board__director--lists {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      overflow: scroll;
+      @media (min-width: 768px) {
+        overflow: hidden;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .board__directors--content {
+      min-width: 240px;
+      padding: 16px;
+      background-color: rgba($color: #fff, $alpha: 0.9);
+      .name {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #231f20;
+      }
+      .designation {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #231f20;
+      }
     }
   }
-}
 
-.promoters--list {
-  display: flex;
-  gap: 120px;
-  justify-content: flex-start;
-  align-items: center;
-  span {
-    display: inline-block;
+  .promoters--list {
+    display: flex;
+    gap: 16px;
+    @media (min-width: 768px) {
+      gap: 120px;
+    }
+    justify-content: flex-start;
+    align-items: center;
+    span {
+      display: inline-block;
+
+      @media (max-width: 767.98px) {
+        svg {
+          width: 123px;
+          height: auto;
+        }
+      }
+    }
   }
 }

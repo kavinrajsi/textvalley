@@ -1,15 +1,22 @@
-.offer__lists {
-  overflow-x: auto;
-  white-space: nowrap;
-  display: flex;
-  flex-wrap: nowrap;
+.page__shop {
+  .offer__lists {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
 
-  .offer__list {
-    display: inline-block;
-    margin-right: 10px;
-    flex: 1 0 auto;
+    .offer__list {
+      display: inline-block;
+      margin-right: 10px;
+      flex: 1 0 auto;
+      @media (max-width: 767.98px) {
+        img {
+          width: 240px;
+        }
+      }
+    }
   }
-}
-.offer__brand--lists__loadMore{
-  text-align: center;
+  .offer__brand--lists__loadMore {
+    text-align: center;
+  }
 }
