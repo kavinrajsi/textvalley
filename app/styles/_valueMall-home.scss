@@ -13,9 +13,10 @@
   font-size: 16px;
   line-height: 26px;
   color: #000000;
+  letter-spacing: initial;
 }
 body {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .carousel-cell {
   margin-right: 20px;
@@ -24,15 +25,76 @@ body {
   .valueMall--homePage__slider {
     padding-left: 0;
     padding-right: 0;
+    .carousel-cell {
+      margin-right: 0;
+    }
+  }
+  .valueMall--store__list {
+    background-color: #000000;
+    .valueMall--store__lists {
+      display: flex;
+      gap: 16px;
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      .valueMall--store__image {
+        flex: 1 0 226px;
+      }
+    }
   }
   .valueMall--dining-overview {
     background-color: #fec129;
+    .valueMall--whatsnew__button {
+      a {
+        background-color: #000;
+        font-family: var(--font-500);
+        font-size: 16px;
+        line-height: 26px;
+        color: #ffffff;
+      }
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+    }
     .valueMall--dining-overview__lists {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(4, 1fr);
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      overflow-x: scroll;
+      @media (min-width: 768px) {
+        overflow: hidden;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .valueMall--dining-overview__list {
+        flex: 1 0 226px;
+      }
       img {
         width: 100%;
+      }
+    }
+  }
+
+  .valueMall--luxury-store {
+    background-color: #000;
+    .section__title {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+    .valueMall--whatsnew__button {
+      a {
+        background-color: #fff;
+        font-family: var(--font-500);
+        font-size: 16px;
+        line-height: 26px;
+        color: #000;
+      }
+      @media (min-width: 768px) {
+        text-align: right;
       }
     }
   }
@@ -52,8 +114,10 @@ body {
       color: #ffffff;
     }
     .valueMall--whatsnew__button {
-      text-align: right;
-      .button {
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+      .button.button__solid {
         background-color: #ffffff;
         border-radius: 50px;
         padding: 16px 24px;
@@ -70,11 +134,22 @@ body {
       color: #ffffff;
     }
     .review__card--lists {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      // align-items : center;
+      gap: 16px;
+      overflow-x: scroll;
+      @media (min-width: 768px) {
+        overflow: hidden;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
     .review__card--list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 240px;
       background-color: #ffffff;
       border-radius: 10px;
       padding: 24px;
@@ -96,10 +171,18 @@ body {
       color: #ffffff;
     }
     .valueMall--blogs--list {
-      display: grid;
-      gap: 30px;
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      overflow-x: scroll;
+      @media (min-width: 768px) {
+        overflow: hidden;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+      }
       .blog__card--mini {
+        min-width: 240px;
         overflow: hidden;
         background-color: #ffffff;
         border-radius: 20px;
@@ -124,7 +207,7 @@ body {
           padding: 16px;
           border-radius: 50px;
           display: block;
-
+          text-align: center;
           background-color: #000000;
           color: #ffffff;
           font-family: var(--font-500);
@@ -265,7 +348,6 @@ body {
     }
   }
 }
-
 .page__valuemall--facilities {
   .store__amenities--icons {
     background-color: #000000;
@@ -404,7 +486,7 @@ body {
   }
   .contact__us-contact--area {
     display: grid;
-    gap: 30px;
+    gap: 20px;
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
     }
@@ -569,7 +651,6 @@ body {
     }
   }
 }
-
 .page__valuemall--shoppingOffer {
   .shopping__offer {
     background-color: #2537dd;
@@ -615,8 +696,8 @@ body {
     }
   }
   .shopping__store--wrapper {
-    background-color: #fff;
-    border: 1px solid #000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
     border-radius: 20px;
     min-height: 347px;
     padding: 16px;
@@ -650,14 +731,21 @@ body {
       flex: 1 0 auto;
       display: flex;
       align-items: flex-end;
-
       /* GM/Desktop/B2 */
       font-family: var(--font-300);
       font-size: 14px;
       line-height: 18px;
       /* identical to box height, or 129% */
-
       color: #757575;
     }
+  }
+}
+@media (max-width: 767.98px) {
+  .container__fluid.newstore__lists,
+  .container__fluid.shopping__offer--lists,
+  .container__fluid.current__eventLists,
+  .container__fluid.dine__offer--lists {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
