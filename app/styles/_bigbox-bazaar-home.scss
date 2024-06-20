@@ -1,0 +1,197 @@
+.page__big-box-bazaar {
+  background-color: #ffffff;
+  .big-box-bazaar--banner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about--big-bazaar {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    .about--big-bazaar__title {
+      margin-bottom: 16px;
+      /* GM/Desktop/H2 */
+      font-family: var(--font-700);
+      font-size: 32px;
+      line-height: 40px;
+      /* identical to box height, or 125% */
+      text-align: center;
+
+      /* GM/Dark Black */
+      color: #231f20;
+    }
+    p {
+      /* GM/Desktop/H4 */
+      font-family: var(--font-500);
+      font-size: 20px;
+      line-height: 24px;
+      /* or 120% */
+      text-align: center;
+
+      /* GM/Dark Black */
+      color: #231f20;
+    }
+  }
+
+  .big-bazaar--highlight {
+    background-color: #2b3029;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    .section__title {
+      /* GM/Desktop/H2 */
+      font-family: var(--font-700);
+      font-size: 32px;
+      line-height: 40px;
+      /* identical to box height, or 125% */
+      text-align: center;
+      /* GM/Brown2 */
+      color: #e8b974;
+      padding-bottom: 24px;
+      text-align: center;
+    }
+    .big-bazaar--highlight--lists {
+      display: flex;
+      justify-content: space-between;
+    }
+    .big-bazaar--highlight--list {
+      img {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+      span {
+        display: block;
+        margin-top: 24px;
+        /* GM/Desktop/H4 */
+        font-family: var(--font-500);
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+        text-align: center;
+
+        /* White */
+        color: #ffffff;
+      }
+    }
+  }
+
+  .shops__gallery {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    .section__title {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .shops__gallery--lists {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(2, 1fr);
+      @media (min-width: 768px) {
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  .shops__offer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background-color: #2b3029;
+    .section__title {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 24px;
+
+      /* GM/Desktop/H2 */
+      font-family: "Cera Pro";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      /* identical to box height, or 125% */
+      text-align: center;
+
+      /* GM/Brown2 */
+      color: #e8b974;
+    }
+    .shopes__offer--lists {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      overflow: scroll;
+      .shopes__offer--list {
+        flex: 1 0 483px;
+      }
+    }
+  }
+
+  .floor__plan {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    .section__title {
+      margin-bottom: 24px;
+      /* GM/Desktop/H2 */
+      font-family: var(--font-700);
+      font-size: 32px;
+      line-height: 40px;
+      /* identical to box height, or 125% */
+      text-align: center;
+
+      /* GM/Dark Black */
+      color: #231f20;
+    }
+  }
+
+  .contact__us {
+    background-color: #2b3029;
+
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    .contact__us--grid {
+      display: grid;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+   .contact__us--form{
+    padding: 16px 24px;
+    background-color: #fff;
+   }
+
+   iframe{
+    height: 516px;
+   }
+
+    .section__title {
+      margin-bottom: 24px;
+      text-align: center;
+
+      /* GM/Desktop/H2 */
+      font-family: var(--font-700);
+      font-size: 32px;
+      line-height: 40px;
+
+      /* GM/Brown2 */
+      color: #e8b974;
+    }
+    .contact__us--form {
+      .section__title {
+        /* GM/Desktop/H3 */
+        font-family: var(--font-700);
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height, or 125% */
+        color: #000000;
+        margin-bottom: 24px;
+        text-align: left;
+      }
+    }
+  }
+}
