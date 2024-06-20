@@ -154,26 +154,12 @@
     <div class="header__menu">
       <nav class="container__box">
         <ul class="header__menu--items">
-          <li class="header__menu-item"><a href="./valuemall-home.html">HOME</a></li>
-          <li class="header__menu-item  has-submenu"><a href="#">SHOP</a>
-            <ul class="submenu">
-              <li class="header__menu-item"><a href="./valuemall-store.html">STORES</a></li>
-              <li class="header__menu-item"><a href="./valuemall-store-upcoming.html">UPCOMING STORES</a></li>
-              <li class="header__menu-item"><a href="./valuemall-shopping-offer.html">SHOPPING OFFERS</a></li>
-            </ul>
-          </li>
-          <li class="header__menu-item"><a href="./valuemall-dine.html">DINE</a></li>
-          <li class="header__menu-item"><a href="./valuemall-entertainment.html">ENTERTAINMENT</a></li>
-          <li class="header__menu-item"><a href="./valuemall-facilities.html">VISIT</a></li>
-          <li class="header__menu-item"><a href="./valuemall-event.html">EVENTS</a></li>
-          <li class="header__menu-item has-submenu active"><a href="#">ABOUT</a>
-            <ul class="submenu">
-              <li class="header__menu-item"><a href="./valuemall-about.html">ABOUT US</a></li>
-              <li class="header__menu-item"><a href="./valuemall-media.html">MEDIA</a></li>
-              <li class="header__menu-item"><a href="./valuemall-career.html">CAREERS</a></li>
-              <li class="header__menu-item"><a href="./valuemall-contact.html">CONTACT US</a></li>
-            </ul>
-          </li>
+          <li class="header__menu-item"><a href="#about-us">ABOUT US</a></li>
+          <li class="header__menu-item"><a href="#highlights">HIGHLIGHTS</a></li>
+          <li class="header__menu-item"><a href="#gallery">GALLERY</a></li>
+          <li class="header__menu-item"><a href="#offers">OFFERS</a></li>
+          <li class="header__menu-item"><a href="#floor-plan">FLOOR PLAN</a></li>
+          <li class="header__menu-item"><a href="#contact-us">CONTACT US</a></li>
         </ul>
         <div class="header__logos">
           <a href="./globalmall-home.html">
@@ -395,35 +381,35 @@
     <section class="container__fluid big-box-bazaar--banner">
       <img src="./images/big-box-bazaar-banner.png" alt="">
     </section>
-    <section class="container__fluid about--big-bazaar">
+    <section class="container__fluid about--big-bazaar" id="about-us">
       <div class="about--big-bazaar__title">About Big Bazzar</div>
       <p>Big Box Bazaar is a B2B and B2C marketplace, offering outright and leasing models for small business owners
         with limited capital.</p>
     </section>
-    <section class="container__fluid big-bazaar--highlight">
+    <section class="container__fluid big-bazaar--highlight" id="highlights">
       <div class="container__box">
         <div class="section__title">Highlights</div>
         <div class="big-bazaar--highlight--lists">
           <div class="big-bazaar--highlight--list">
             <img src="./images/low-cost.png" alt="">
-            <span>Affordable Shopping</span>
+            <span>Affordable <br>Shopping</span>
           </div>
           <div class="big-bazaar--highlight--list">
             <img src="./images/shopping-bag.png" alt="">
-            <span>Quality Goods</span>
+            <span>Quality <br>Goods</span>
           </div>
           <div class="big-bazaar--highlight--list">
             <img src="./images/closet.png" alt="">
-            <span>Diverse Product Range</span>
+            <span>Diverse Product <br>Range</span>
           </div>
           <div class="big-bazaar--highlight--list">
             <img src="./images/mall.png" alt="">
-            <span>Vibrant Atmosphere</span>
+            <span>Vibrant <br>Atmosphere</span>
           </div>
         </div>
       </div>
     </section>
-    <section class="container__box shops__gallery">
+    <section class="container__box shops__gallery" id="gallery">
       <div class="section__title">Shops Gallery</div>
       <div class="shops__gallery--lists">
         <div class="shops__gallery--list">
@@ -446,7 +432,7 @@
         </div>
       </div>
     </section>
-    <section class="container__fluid shops__offer">
+    <section class="container__fluid shops__offer" id="offers">
       <div class="container__box">
         <div class="section__title">Offers</div>
       </div>
@@ -465,15 +451,16 @@
         </div>
       </div>
     </section>
-    <section class="container__box floor__plan">
+    <section class="container__box floor__plan" id="floor-plan">
       <div class="section__title">Floor Plan</div>
       <img src="./images/big-box-bazaar-offer-floor-plan.png" alt="">
     </section>
-    <section class="container__fluid contact__us">
+    <section class="container__fluid contact__us" id="contact-us">
       <div class="container__box">
         <div class="section__title">Contact Us</div>
       </div>
-      <div class="container__box contact__us--grid">
+      <div class="container__box ">
+      <div class=" contact__us--grid">
         <div class="contact__us--map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.485375068389!2d77.64326727455345!3d11.372250547922086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96be6ed826c2d%3A0x48cc083bfb20d9b6!2sTexvalley!5e0!3m2!1sen!2sin!4v1718889625159!5m2!1sen!2sin"
@@ -509,6 +496,7 @@
               <input class="form__input--button" type="button" value="SUBMIT">
             </div>
           </form>
+        </div>
         </div>
       </div>
     </section>
@@ -717,6 +705,7 @@
         </nav>
       </div>
       <div class="social__link">
+        <div style="display: flex; gap: 8px; justify-content: center; align-items: center;">
         <span class="social__link--title">Follow us on social :</span>
         <nav class="social__link--list">
           <a href="https://www.instagram.com/texvalleyindia/" target="_blank" title="">
@@ -756,6 +745,7 @@
             </svg>
           </a>
         </nav>
+      </div>
         <a href="https://www.madarth.com/" class="social__link-made" target="_blank">Made by Madarth</a>
       </div>
     </div>
