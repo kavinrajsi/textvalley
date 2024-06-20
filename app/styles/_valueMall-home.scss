@@ -14,11 +14,9 @@
   line-height: 26px;
   color: #000000;
 }
-
 body {
   background-color: #fff;
 }
-
 .carousel-cell {
   margin-right: 20px;
 }
@@ -126,7 +124,7 @@ body {
           padding: 16px;
           border-radius: 50px;
           display: block;
-          text-align: center;
+
           background-color: #000000;
           color: #ffffff;
           font-family: var(--font-500);
@@ -267,22 +265,7 @@ body {
     }
   }
 }
-.page__valuemall--shoppingOffer {
-  .shopping__offer {
-    background-color: #2537dd;
-    .section__title {
-      color: #ffffff;
-    }
-  }
-  .shopping__store--lists {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-}
+
 .page__valuemall--facilities {
   .store__amenities--icons {
     background-color: #000000;
@@ -483,7 +466,6 @@ body {
     }
   }
 }
-
 .page__valuemall--eventList {
   .event__card--mini {
     padding: 8px;
@@ -538,7 +520,6 @@ body {
       color: #231f20;
     }
   }
-
   .upcoming__events,
   .past__events {
     background-color: #ffffff;
@@ -563,7 +544,6 @@ body {
     gap: 20px;
   }
 }
-
 .page__valuemall--dine {
   .dine__offer {
     .dine__offer--lists {
@@ -590,8 +570,13 @@ body {
   }
 }
 
-
 .page__valuemall--shoppingOffer {
+  .shopping__offer {
+    background-color: #2537dd;
+    .section__title {
+      color: #ffffff;
+    }
+  }
   .shopping__offer {
     .shopping__offer--lists {
       .deals__card--mini {
@@ -615,14 +600,64 @@ body {
       }
     }
   }
-}
+  .shopping__store--lists {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 968px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .shopping__store--wrapper {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 20px;
+    min-height: 347px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    .shopping__store--logo {
+      margin-bottom: 16px;
+    }
+    .shopping__store--title {
+      margin-bottom: 8px;
+      font-family: var(--font-300);
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    .shopping__store--name {
+      font-family: var(--font-500);
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+    }
+    .shopping__store--content {
+      margin-top: 16px;
+      font-family: var(--font-300);
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+    }
+    .shopping__store--date {
+      flex: 1 0 auto;
+      display: flex;
+      align-items: flex-end;
 
+      /* GM/Desktop/B2 */
+      font-family: var(--font-300);
+      font-size: 14px;
+      line-height: 18px;
+      /* identical to box height, or 129% */
 
-
-.shopping__store--wrapper{
-  .shopping__store--logo{}
-  .shopping__store--title{}
-  .shopping__store--name{}
-  .shopping__store--content{}
-  .shopping__store--date{}
+      color: #757575;
+    }
+  }
 }
