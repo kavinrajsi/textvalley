@@ -7,6 +7,7 @@ const autoprefixer = require('autoprefixer');
 const sass = require('gulp-sass')(require('sass'));
 const cssnano = require('cssnano');
 const { argv } = require('yargs');
+var critical = require('critical').stream;
 
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
@@ -84,7 +85,11 @@ function html() {
 
 function images() {
   return src('app/images/**/*', { since: lastRun(images) })
-    .pipe($.imagemin())
+    .pipe($.imagemin({
+      optimizationLevel: 3,
+      progressive: true,
+      interlaced: true
+    }))
     .pipe(dest('dist/images'));
 };
 
@@ -111,6 +116,36 @@ function measureSize() {
     .pipe($.size({title: 'build', gzip: true}));
 }
 
+function criticalCss() {
+  return src('dist/*.html')
+  .pipe(critical(
+    {
+      inline: true,
+      minify: true,
+      base: 'dist/',
+      dimensions: [
+        {
+          height: 320,
+          width: 500,
+        },
+        {
+          height: 900,
+          width: 1300,
+        },
+      ],
+    }),
+    (err, output) => {
+      if (err) {
+        console.error(err);
+      } else if (output) {
+        console.log('Generated critical CSS');
+      }
+    }
+  )
+  .pipe(dest('dist'));
+}
+
+
 const build = series(
   clean,
   parallel(
@@ -120,6 +155,7 @@ const build = series(
     fonts,
     extras
   ),
+  criticalCss,
   measureSize
 );
 
