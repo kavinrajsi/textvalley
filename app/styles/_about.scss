@@ -59,12 +59,78 @@
     }
   }
 
+  &.page__home--about {
+    background-color: #fff;
+    background-image: url("../images/home-page-bg.png");
 
-  &.page__home--about{
-.banner{
-  padding-left: 0;
-  padding-right: 0;
-}
+    .banner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .board__directors {
+      .section__title {
+        color: #231f20;
+      }
+    }
+    .home__about--vision--missionGrid {
+      position: relative;
+      display: grid;
+      gap: 0;
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .home__about--center {
+        img {
+          width: 100%;
+          height: 240px;
+          @media (min-width: 768px) {
+            height: 100%;
+          }
+        }
+      }
+      .home__about--vision,
+      .home__about--mission {
+        position: relative;
+        img {
+          width: 100%;
+          height: 240px;
+          @media (min-width: 768px) {
+            height: 100%;
+          }
+        }
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          @media (min-width: 768px) {
+            padding: 40px;
+          }
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: #231f20, $alpha: 0.45);
+          p {
+            /* GM/Desktop/H5 */
+            font-family: var(--font-700);
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff;
+
+            strong {
+              margin-bottom: 16px;
+              display: block;
+              /* GM/Desktop/H3 */
+              font-family: var(--font-700);
+              font-size: 24px;
+              line-height: 30px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
   }
 }
-
