@@ -1,6 +1,10 @@
 .page__global--market{
   .sliderBanner{
+    a{
+      display: block;
+    }
     img{
+      width: 100%;
       height: 450px;
       object-fit: cover;
     }
