@@ -125,8 +125,8 @@ function criticalCss() {
       base: 'dist/',
       dimensions: [
         {
-          height: 320,
-          width: 500,
+          height: 500,
+          width: 320,
         },
         {
           height: 900,
