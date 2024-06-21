@@ -1,0 +1,78 @@
+{{!-- layouts/base.hbs --}}
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>
+            {{#if title}}
+                {{title}}
+            {{else}}
+                Site Title
+            {{/if}}
+        </title>
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        {{#> head-block}}
+            {{!-- Custom <head> content per page could be added --}}
+        {{/head-block}}
+    </head>
+    <body class="{{bodyClass}}">
+ <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+        <div class="site-wrap">
+
+            {{#> header-block}}
+                {{!-- Page header goes here --}}
+            {{/header-block}}
+
+            <main>
+            {{#> content-block}}
+                {{!-- Content goes here --}}
+            {{/content-block}}
+            </main>
+
+
+        </div>
+
+        {{#> footer-block}}
+            {{!--
+            The `includes/footer` partial is the default content,
+            but can be overridden.
+            --}}
+        {{/footer-block}}
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/vendor.js -->
+        <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="./scripts/main.js"></script>
+        <!-- endbuild -->
+
+        {{#> scripts-block}}
+            {{!-- Custom scripts per page can be added --}}
+        {{/scripts-block}}
+
+    </body>
+</html>
