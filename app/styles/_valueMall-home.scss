@@ -349,6 +349,9 @@ body {
       }
     }
   }
+  .carousel-cell{
+    margin-right: 20px;
+  }
 }
 .page__valuemall--facilities {
   .store__amenities--icons {
@@ -408,14 +411,7 @@ body {
     }
   }
 }
-.page__valuemall--eventList {
-  .current__event {
-    background-color: #2537dd;
-    .section__title {
-      color: #ffffff;
-    }
-  }
-}
+
 .page__valuemall--media {
   .media__grid--card {
     border-radius: 20px;
@@ -550,7 +546,17 @@ body {
     }
   }
 }
+
 .page__valuemall--eventList {
+  .current__event {
+    background-color: #2537dd;
+    .section__title {
+      color: #ffffff;
+    }
+  }
+  .carousel-cell{
+    margin-right: 20px;
+  }
   .event__card--mini {
     padding: 8px;
     border-radius: 20px;
@@ -630,6 +636,9 @@ body {
 }
 .page__valuemall--dine {
   .dine__offer {
+    .carousel-cell{
+      margin-right: 20px;
+    }
     .dine__offer--lists {
       .offer__card--mini {
         padding: 8px;
@@ -740,6 +749,9 @@ body {
       /* identical to box height, or 129% */
       color: #757575;
     }
+  }
+  .carousel-cell{
+    margin-right: 20px;
   }
 }
 @media (max-width: 767.98px) {
