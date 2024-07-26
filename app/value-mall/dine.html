@@ -841,17 +841,28 @@
           });
 
         </script>
-        <script>
-          $(document).ready(function() {
-              // Check if the page has been reloaded before
-              if (!localStorage.getItem('pageReloaded')) {
-                  // Set the flag in local storage
-                  localStorage.setItem('pageReloaded', 'true');
-                  // Reload the page
-                  location.reload();
-              }
-          });
-      </script>
+    <script>
+      $(document).ready(function() {
+          // Define a flag in localStorage to track if the page has been reloaded
+          var reloadFlag = 'hasReloaded';
+
+          // Check if the flag is set in localStorage
+          if (!localStorage.getItem(reloadFlag)) {
+              // Set the flag in localStorage
+              localStorage.setItem(reloadFlag, 'true');
+
+              // Reload the page
+              window.location.reload();
+          } else {
+              // Optionally, clear the flag if you want to allow future reloads
+              localStorage.removeItem(reloadFlag);
+
+              // Log the URL of the page (optional)
+              console.log('Current URL:', window.location.href);
+          }
+      });
+  </script>
+
       </body>
 
       </html>
