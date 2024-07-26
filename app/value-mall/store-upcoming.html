@@ -805,6 +805,18 @@
       });
 
     </script>
+        <script>
+          $(document).ready(function() {
+              // Check if the page has been reloaded before
+              if (!localStorage.getItem('pageReloaded')) {
+                  // Set the flag in local storage
+                  localStorage.setItem('pageReloaded', 'true');
+                  // Reload the page
+                  location.reload();
+              }
+          });
+      </script>
+
   </body>
 
   </html>
