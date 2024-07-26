@@ -7,7 +7,7 @@ const autoprefixer = require('autoprefixer');
 const sass = require('gulp-sass')(require('sass'));
 const cssnano = require('cssnano');
 const { argv } = require('yargs');
-var critical = require('critical').stream;
+// var critical = require('critical').stream;
 
 const $ = gulpLoadPlugins();
 const server = browserSync.create();
@@ -116,35 +116,34 @@ function measureSize() {
     .pipe($.size({title: 'build', gzip: true}));
 }
 
-function criticalCss() {
-  return src('dist/*.html')
-  .pipe(critical(
-    {
-      inline: true,
-      minify: true,
-      base: 'dist/',
-      dimensions: [
-        {
-          height: 500,
-          width: 320,
-        },
-        {
-          height: 900,
-          width: 1300,
-        },
-      ],
-    }),
-    (err, output) => {
-      if (err) {
-        console.error(err);
-      } else if (output) {
-        console.log('Generated critical CSS');
-      }
-    }
-  )
-  .pipe(dest('dist'));
-}
-
+// function criticalCss() {
+//   return src('dist/*.html')
+//   .pipe(critical(
+//     {
+//       inline: true,
+//       minify: true,
+//       base: 'dist/',
+//       dimensions: [
+//         {
+//           height: 500,
+//           width: 320,
+//         },
+//         {
+//           height: 900,
+//           width: 1300,
+//         },
+//       ],
+//     }),
+//     (err, output) => {
+//       if (err) {
+//         console.error(err);
+//       } else if (output) {
+//         console.log('Generated critical CSS');
+//       }
+//     }
+//   )
+//   .pipe(dest('dist'));
+// }
 
 const build = series(
   clean,
@@ -155,7 +154,7 @@ const build = series(
     fonts,
     extras
   ),
-  criticalCss,
+  // criticalCss,
   measureSize
 );
 
