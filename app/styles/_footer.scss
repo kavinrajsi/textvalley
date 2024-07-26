@@ -59,7 +59,7 @@
       display: flex;
     }
     .subscription--title {
-      font-family: "Cera Pro";
+      font-family: CeraPro-Regular;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
@@ -68,7 +68,7 @@
       margin-bottom: 8px;
     }
     .subcription--content {
-      font-family: "Cera Pro";
+      font-family: CeraPro-Regular;
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -82,7 +82,7 @@
         min-width: 200px;
         padding: 16px;
         border: 1px solid #fff;
-        font-family: "Cera Pro";
+        font-family: CeraPro-Regular;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -101,7 +101,7 @@
       }
       span {
         display: block;
-        font-family: "Cera Pro";
+        font-family: CeraPro-Regular;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -118,7 +118,7 @@
         a {
           display: inline-block;
           margin-bottom: 8px;
-          font-family: "Cera Pro";
+          font-family: CeraPro-Regular;
           font-style: normal;
           font-weight: 300;
           font-size: 14px;
@@ -150,7 +150,7 @@
         justify-content: flex-start;
       }
       a {
-        font-family: "Cera Pro";
+        font-family: CeraPro-Regular;
         font-style: normal;
         font-weight: 300;
         font-size: 12px;
@@ -171,7 +171,7 @@
       }
 
       .social__link--title {
-        font-family: "Cera Pro";
+        font-family: CeraPro-Regular;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -187,7 +187,7 @@
         @media (min-width: 768px) {
           flex: initial;
         }
-        font-family: "Cera Pro";
+        font-family: CeraPro-Regular;
         font-style: normal;
         font-weight: 300;
         font-size: 10px;
